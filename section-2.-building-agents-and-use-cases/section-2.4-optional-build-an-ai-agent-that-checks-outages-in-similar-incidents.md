@@ -9,8 +9,6 @@ description: >-
 
 First, let’s create an outage in incident INC0010248.
 
-&#x20;
-
 1. Open the incidents table (**All > Incident > All)**
 2. Search for I**NC0010248** and open it
 3. Scroll down to the bottom of the page, and select the **Outages tab.** If the tab is not visible, ask your instructor how you can add it as a related list.
@@ -21,8 +19,6 @@ First, let’s create an outage in incident INC0010248.
 5. In the **Outage New record page**, select **Degradation** from the Type list, and fill in the T**ask number** field with the incident number **“INC0010248**”:
 
 <figure><img src="../.gitbook/assets/outage2.png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
 
 6. Click **Submit**
 7. Click the **Update** button to return to the incidents list
@@ -35,8 +31,6 @@ Now, we need to switch scope to “**Platform AI Agents and Skills**”.
 
 9. Select **Application scope**: Global, and then filter for and select **Platform AI Agents and Skills.**
 
-
-
 {% hint style="info" %}
 NOTE: If you can’t find the scope “Platform AI Agents and Skills”. Please click to check **Appendix Section A4: Application Scope at the end of the document.**
 {% endhint %}
@@ -44,7 +38,7 @@ NOTE: If you can’t find the scope “Platform AI Agents and Skills”. Please 
 Now let’s go to **Flow Designer** and modify the existing “Get Similar records” action and have it return outages found in similar incidents as well.
 
 10. Open Flow Designer (**All > Flow Designer**) - this will open Flow Designer in a new tab
-11. Under the Actions tab, find “**Get Similar Records**” and open it. **DO NOT OPEN “Get Similar Incident Records”**&#x20;
+11. Under the Actions tab, find “**Get Similar Records**” and open it. **DO NOT OPEN “Get Similar Incident Records”**
 
 <figure><img src="../.gitbook/assets/outag11.png" alt=""><figcaption></figcaption></figure>
 
@@ -56,7 +50,7 @@ Now let’s go to **Flow Designer** and modify the existing “Get Similar recor
 
 <figure><img src="../.gitbook/assets/outage13.png" alt=""><figcaption></figcaption></figure>
 
-14. &#x20;Click **Copy**
+14. Click **Copy**
 15. On the left, click S**cript Step**
 
 <figure><img src="../.gitbook/assets/outage15.png" alt=""><figcaption></figcaption></figure>
@@ -133,16 +127,12 @@ Now let’s go to **Flow Designer** and modify the existing “Get Similar recor
 
 17. In the Output Variables window (below the Script window), delete both existing variables, and create the following:
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/output.png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
 
 18. On the left, click **Outputs**, then click **Edit Outputs**
 19. Delete the message output (confirm the popup window)
-20. &#x20;Change the label from “References” to “similar records”
-21. Click Create Output with the label “outage details”, the name “outage\_details”, and the type String&#x20;
+20. Change the label from “References” to “similar records”
+21. Click Create Output with the label “outage details”, the name “outage\_details”, and the type String
 
 <figure><img src="../.gitbook/assets/outag2.png" alt=""><figcaption></figcaption></figure>
 
@@ -151,19 +141,13 @@ Now let’s go to **Flow Designer** and modify the existing “Get Similar recor
 
 <figure><img src="../.gitbook/assets/outage3.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
-
 24. Click **Test**
 25. Type “incident” into the type field, and “**INC0010248**” into the record\_number field, then click **Run Test**
 26. When it appears, click “Your test has finished running. View the Action execution details.”
 
-&#x20;
-
 Your results should look like:
 
 <figure><img src="../.gitbook/assets/outage5.png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
 
 27. Return to the previous window, and click Save, then Publish
 28. Close the Workflow Studio browser tab, and return to the main lab browser tab
@@ -173,32 +157,22 @@ Your results should look like:
 
 Now let’s create another Flow Action for creating an outage.
 
-&#x20;
-
 <br>
-
-&#x20;
 
 30. Open Flow Designer (All > Flow Designer) and search for “outage” under the Actions tab.
 
 <figure><img src="../.gitbook/assets/outage7.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;31\. Click on Create Outage and copy the action, name it “\[Your Initials] Create outage.”
-
-&#x20;
+31\. Click on Create Outage and copy the action, name it “\[Your Initials] Create outage.”
 
 <figure><img src="../.gitbook/assets/outage8a.png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"> </p>
-
-32. &#x20;Delete the following inputs:
+32. Delete the following inputs:
     1. “configuration item”
     2. “type”
     3. “begin”
 
 <figure><img src="../.gitbook/assets/outage9.png" alt=""><figcaption></figcaption></figure>
-
-<p align="center"> </p>
 
 33. On the left, click **Script Step** and delete the following variables:
     1. “cmdbCI”
@@ -207,7 +181,7 @@ Now let’s create another Flow Action for creating an outage.
 
 <figure><img src="../.gitbook/assets/outage10.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;34\. Replace the existing script with this one:
+34\. Replace the existing script with this one:
 
 ```
 (function execute(inputs, outputs) { 
@@ -235,8 +209,6 @@ Now let’s create another Flow Action for creating an outage.
 
 <figure><img src="../.gitbook/assets/outager35.png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"> </p>
-
 36. On the left, click Outputs, then Edit Outputs, then Create Output
 37. Edit the new Output with the following values:
     1. Label: “Outage Number”
@@ -245,12 +217,8 @@ Now let’s create another Flow Action for creating an outage.
 
 <figure><img src="../.gitbook/assets/outage37.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
-
 38. Click Exit Edit Mode
 39. Drag the “OutageRecordNumber” Script variable to the Outage Number Action Output box.
-
-&#x20;
 
 <figure><img src="../.gitbook/assets/outage39.png" alt=""><figcaption></figcaption></figure>
 
@@ -260,11 +228,7 @@ Now let’s create another Flow Action for creating an outage.
 
 Your results should look like:
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/outage42.png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
 
 43. Return to the previous window, and click Save, then Publish
 44. Close the Workflow Studio browser tab, and return to the main lab browser tab
@@ -295,12 +259,7 @@ Now, let's open AI Agent Studio and build another AI agent. This time, we will d
 
 6. Click Save and continue
 7. Click on the existing “Get Similar Incident Records” flow action and change the name to “Get Similar Incident Records and Outages”
-
-&#x20;
-
 8. Select “\[Your Initials] Get Similar Records and Outages” as the flow action.
-
-<p align="center"> </p>
 
 <figure><img src="../.gitbook/assets/flow8.png" alt=""><figcaption></figcaption></figure>
 
@@ -311,33 +270,23 @@ Now, let's open AI Agent Studio and build another AI agent. This time, we will d
     3. Flow action: \[Your initials] Create Outage
     4. Execution mode: Autonomous
     5. Display output: Yes
-    6. Output Transformation strategy: Concise.&#x20;
+    6. Output Transformation strategy: Concise.
 
-11\.   Click Add-Your tools should look like this:
-
-&#x20;
+11\. Click Add-Your tools should look like this:
 
 <figure><img src="../.gitbook/assets/flow11.png" alt=""><figcaption></figcaption></figure>
 
+12\. Click **Save and Continue**
 
+13\. On the Define Availability page, make sure the Status toggle is set to On
 
-
-
-12\.   Click **Save and Continue**
-
-13\.   On the Define Availability page, make sure the Status toggle is set to On
-
-14\.   Click **Save and Test**
-
-
+14\. Click **Save and Test**
 
 **Now let’s test the agent!**
 
-·      In the Task box enter “INC0010004” and click Start test.
+· In the Task box enter “INC0010004” and click Start test.
 
-·      At the end of the test, check the comments in INC0010004:
-
-&#x20;
+· At the end of the test, check the comments in INC0010004:
 
 <figure><img src="../.gitbook/assets/test1.png" alt=""><figcaption></figcaption></figure>
 
@@ -345,7 +294,7 @@ Congratulations! You have completed the advanced part of the lab!
 
 17. In the Output Variables window (below the Script window), delete both existing variables, and create the following:
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 18. On the left, click **Outputs,** then click **Edit Outputs**
 19. Delete the message output (confirm the pop-up window)
@@ -354,12 +303,10 @@ Congratulations! You have completed the advanced part of the lab!
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"> </p>
-
 22. Click on **Exit Edit Mode**
 23. Drag and drop the script step variables from the right into their corresponding boxes in the middle, like this:
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/outage3.png" alt=""><figcaption></figcaption></figure>
 
 24. Click **Test**
 25. Type “incident” into the type field, and “INC0010004” into the record\_number field, then click **Run Test**
@@ -368,13 +315,13 @@ Congratulations! You have completed the advanced part of the lab!
 
 26. When it appears, click “Your test has finished running. View the Action execution details.” Results should look like this.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/outage5.png" alt=""><figcaption></figcaption></figure>
 
 27. Return to the previous window, and click **Save, then Publish**
-28. &#x20;Close the Workflow Studio browser tab, and return to the main lab browser tab
+28. Close the Workflow Studio browser tab, and return to the main lab browser tab
 29. Let’s change the Application Scope back to Global
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/outage6.png" alt=""><figcaption></figcaption></figure>
 
 Now let's create another Flow Action for creating an outage.
 
@@ -400,7 +347,7 @@ Now let's create another Flow Action for creating an outage.
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
-34. Replace script with this one:&#x20;
+34. Replace script with this one:
 
 ```
 (function execute(inputs, outputs) { 

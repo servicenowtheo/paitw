@@ -2,34 +2,23 @@
 
 > **Objective:** Put everything together! Use the Voice AI assistant to create an incident, assign it to the L1 Service Desk AI Specialist, and watch the full Zero Touch Support pipeline — from voice call through autonomous resolution — in action.
 >
-> ⏱️ **Total time:** ~15 minutes
+> ⏱️ **Total time:** \~15 minutes
 
 ***
 
 ### ❇️ Step 1 — Impersonate Ravi Kapoor
 
-1. From the icon on top right, pull down and choose impersonate&#x20;
-2.  Choose **Ravi Kapoor**
-3.  Select **Impersonate user** to confirm.
-
-    <figure><img src=".gitbook/assets/ztsd/2026-06-24 10.21.51.png" alt=""><figcaption></figcaption></figure>
-
-
+1. From the icon on top right, pull down and choose impersonate
+2. Choose **Ravi Kapoor**
+3. Select **Impersonate user** to confirm.
 
 ***
 
 ### ❇️ Step 2 — Assign the Incident to the L1 Service Desk AI Specialist
 
-1. As Ravi, on the Service Operations Workspace, select the **List** button on the far left, then under **Incidents** select **Assigned to you**. Find the incident pre-seeded for this lab by its short description — **"ZScaler tunnel dropping — cannot reach internal apps"** (`INC0010015` on this instance, though the exact number may differ on yours).
+1.  As Ravi, on the Service Operations Workspace, select the **List** button on the far left, then under **Incidents** select **Assigned to you**. Find the incident pre-seeded for this lab by its short description — **"ZScaler tunnel dropping — cannot reach internal apps"** (`INC0010015` on this instance, though the exact number may differ on yours).
 
     > **Note:** If this incident isn't in **New** state, update its state to **New** before continuing so the assignment step below triggers correctly.
-
-
-
-<figure><img src=".gitbook/assets/ztsd/2026-06-24 12.01.06 (3).png" alt=""><figcaption></figcaption></figure>
-
-
-
 2. On the incident record, navigate to the **Details** tab.
 3. Scroll down to the **Assignment** section.
 4. In the **Assigned to** field, type `ai` and select the AI Specialist you named in Exercise 1 (e.g., **Athena Service Desk AI Specialist** — your first name, plus the fixed last name "Service Desk AI Specialist") from the dropdown.
@@ -41,12 +30,7 @@
 
     > Once saved, the incident state will change to **In Progress** and the L1 Service Desk AI Specialist will begin working the incident autonomously.
 
-
     > **Note:** The two screenshots below may not exactly match what you see on your instance — if they don't, trust the written steps over the picture.
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.15.56 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.16.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -76,11 +60,7 @@
 
     > **Be patient:** this takes about 8-10 minutes. It's normal to see "Checked on remaining steps" appear several times while it works.
 
-
-
     > **Note:** This screenshot may not exactly match what you see on your instance — trust the written steps.
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.32.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -103,8 +83,6 @@
 #### ✅ Final Checkpoint
 
 You have successfully:
-
-
 
 * Assigned the incident to the **L1 Service Desk AI Specialist**
 * Watched the AI Specialist autonomously classify, triage, investigate, and resolve the incident

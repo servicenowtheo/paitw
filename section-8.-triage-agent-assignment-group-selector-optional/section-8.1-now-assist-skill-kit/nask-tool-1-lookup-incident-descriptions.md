@@ -4,7 +4,7 @@ description: Here we create a new tool that will be used in the skill.
 
 # NASK Tool 1: Lookup incident descriptions
 
-Select the + symbol between start and your skill prompt add a tool node and tool type script.\
+Select the + symbol between start and your skill prompt add a tool node and tool type script.\
 Give your script the exact name **LookupIncident** and write your own script, copy in the script below, ensure to not get any extra line breaks.
 
 ```javascript
@@ -40,9 +40,8 @@ Give your script the exact name **LookupIncident** and write your own script, co
 
 ```
 
-Your configuration should now look like this:\
-&#x20;
+Your configuration should now look like this:<br>
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 No other configuration is needed you can now select continue until the tool is added.

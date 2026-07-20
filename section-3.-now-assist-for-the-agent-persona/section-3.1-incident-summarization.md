@@ -1,8 +1,8 @@
 # Section 3.1 Incident Summarization
 
-1. Please return to your lab instance by clicking on the ServiceNow logo in the upper-left corner.  Alternatively, y**ou can remove any portal suffix from your instance URL**; for example, my URL looks like this.
+1. Please return to your lab instance by clicking on the ServiceNow logo in the upper-left corner. Alternatively, y**ou can remove any portal suffix from your instance URL**; for example, my URL looks like this.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 2. **Select the Workspace tab** and **select Service Operations Workspace.** Service Operations Workspace provides a consolidated view to help agents manage the life cycles of task records, such as incidents, requests, and walk-ups.
 
@@ -44,7 +44,7 @@ As an agent, this is extremely helpful if there are multiple updates to the work
 Your incident summarization may look slightly different from the screenshot shown below.
 {% endhint %}
 
-8. Notice the different icons at the bottom. The thumbs up/down are used to send feedback during re-training of the Now LLM (if the customer has opted into data sharing). You can copy the text to a clipboard as well as regenerate the summary.&#x20;
+8. Notice the different icons at the bottom. The thumbs up/down are used to send feedback during re-training of the Now LLM (if the customer has opted into data sharing). You can copy the text to a clipboard as well as regenerate the summary.
 9. Let's add the generated summary to our work notes by **selecting the Share button.**
 
 <figure><img src="../.gitbook/assets/workshot.png" alt=""><figcaption></figcaption></figure>

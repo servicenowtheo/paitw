@@ -1,6 +1,6 @@
 # Section 2.2 Build an Agent with Tools
 
-1. &#x20;Open AI Agent Studio **(All > AI Agent Studio > Overview)**
+1. Open AI Agent Studio **(All > AI Agent Studio > Overview)**
 2. Click the **Create and Manage** module.
 3. Click on the **AI Agent** tab, then click **Add**
 
@@ -8,11 +8,9 @@
 >
 > helping end users resolve their IT issues. It provide simple to follow steps to help users remediate their problem using a professional and business friendly tone. first it will need to get the dteails, any current similar incidents open, using the description search the KB for relevant articles to help. If there are no relevant articles, use your IT knowledge to come up with a recommended resolution based on the short description of the incident. Add resolution steps, along with any relevant similar incidents and knowledge articles, to the Additional Comments section of the incident record. When adding a comment, make sure to include a qualifier that states the comment was added by an AI Agent. Your output message to the user should be formatted to be easy to read with new line characters in a list format. Also provide your reasoning for recommending these steps.
 
-<figure><img src="../.gitbook/assets/Unknown image (164)" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Unknown image (113)" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Unknown image (165)" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/Unknown image (114)" alt=""><figcaption></figcaption></figure>
 
 * Now scroll through the results, and see how Now Assist has filled in the AI Agent role, list of steps, and Agent name.
 * You will see a “**Possible duplications found**” dialog pop up, click “**Ignore and continue**”
@@ -21,7 +19,7 @@
 
 **\*\*\*If you don't see the tools below when you click Recommended Tools, add each tool manually using the Add tool button and choose the exact ones listed below from the existing. The instructor can help guide you\*\*\*\***
 
-<figure><img src="../.gitbook/assets/Unknown image (166)" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Unknown image (115)" alt=""><figcaption></figcaption></figure>
 
 We are missing one tool, so let’s create the following tools by selecting the **Add tool** option from the AI agent definition:
 
@@ -65,8 +63,6 @@ Under advance
 14. On the Activation status area, make sure the Status toggle is set to "**On"**
 15. Click **Save and Test**
 
-    &#x20;
-
     **Now let’s test the agent!**
 
 * In the Task box, enter “**Help me resolve INC0010248**” and click Continue to Test Chat response.
@@ -78,6 +74,3 @@ We have left many of the tools to be ‘Human in the loop supervised’ to showc
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Next, let’s move this Agent and its tools to an Agentic workflow!
-
-
-

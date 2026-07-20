@@ -2,7 +2,7 @@
 
 > **Objective:** Configure and activate the L1 Service Desk AI Specialist so it can autonomously classify, triage, investigate, and resolve incidents on behalf of your IT Support team.
 >
-> ⏱️ **Total time:** ~15 minutes
+> ⏱️ **Total time:** \~15 minutes
 
 ***
 
@@ -12,16 +12,12 @@
 
     > You'll land on the AI Agent Studio Overview page, where you can see ready-made AI automations and any AI Specialists already active in your organization.
 
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-01 at 4.16.31 PM.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ### ❇️ Open the L1 Service Desk AI Specialist for editing
 
 1. On the AI Agent Studio Overview page, locate the **L1 Service Desk AI Specialist** card under _Ready-made AI automations > AI specialists_.
 2. Select **View Details** on the card — this opens the full configuration experience directly. (Note: you may also see an **Unpublish** action on the card, which is not needed for this exercise.)
-
-<figure><img src=".gitbook/assets/ztsd/03_edit_ai_worker_modal.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -43,11 +39,7 @@ You are now on the **Profile** page for the L1 Service Desk AI Specialist. This 
    * `sn_service_desk_agent`
    * `itil`
    * `sn_dex.service_desk_user`
-6.  Select **Save** in the top-right corner.
-
-<figure><img src=".gitbook/assets/ztsd/04_profile_page.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/ztsd/05_add_it_support_group.png" alt=""><figcaption></figcaption></figure>
+6. Select **Save** in the top-right corner.
 
 ***
 
@@ -63,8 +55,6 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 
     > These are the fields the AI Specialist will automatically populate when it picks up a new incident. Tailor this list to match your organization's classification requirements.
 
-<figure><img src=".gitbook/assets/ztsd/06_tasks_classify_and_assign.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ### ❇️ Configure Tasks — Triage and diagnose
@@ -76,15 +66,13 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 3.  Scroll down to **Map AI Specialist states to record states**. Confirm the following mappings:
 
     | AI Specialist State | → | Incident State |
-    | -------------------- | - | --------------- |
-    | New               | → | New            |
-    | Work in progress  | → | In Progress    |
-    | Awaiting info     | → | On Hold        |
-    | Solution proposed | → | Resolved       |
+    | ------------------- | - | -------------- |
+    | New                 | → | New            |
+    | Work in progress    | → | In Progress    |
+    | Awaiting info       | → | On Hold        |
+    | Solution proposed   | → | Resolved       |
 
     > **Note:** These state mappings may differ in your production instances if you've modified the out-of-the-box incident state model. Adjust the mappings to match your organization's workflow.
-
-<figure><img src=".gitbook/assets/ztsd/07_tasks_triage_and_diagnose.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -95,9 +83,9 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
    * **Knowledge sources:** Confirm the following AI Search Profiles are listed:
      * `ZTSD Search Profile`
      * `Known Error Matcher`
-   * Select **+ Add** to attach additional search profiles if needed.
+   *   Select **+ Add** to attach additional search profiles if needed.
 
-     > **Note:** If `Known Error Matcher` isn't listed, select **+ Add** and add it manually before continuing.
+       > **Note:** If `Known Error Matcher` isn't listed, select **+ Add** and add it manually before continuing.
 3.  Set the **Research depth** based on your preference:
 
     * **Low** – faster results, less detail
@@ -107,17 +95,15 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
     > Knowledge sources define where the AI Specialist looks for resolution information. Search profiles can include knowledge bases, known error databases, and other indexed content. The research depth controls how extensively the AI Specialist investigates before proposing a solution.
 
     > **Note:** Product Management has indicated the Research Depth setting is currently not applied by the AI Specialist and is expected to be removed in a future release. You can leave it at the default for now.
-4.  Leave **Pre resolution condition** blank for this lab — this optional encoded query lets you validate the record against the table before the AI Specialist acts on it.
-5.  Set the **Execution mode**:
-    * **Supervised** – The AI Specialist presents resolution notes as a draft for a human agent to review before posting to the caller.
-    * **Autonomous** – The AI Specialist posts resolution notes directly to the caller without human review.
+4. Leave **Pre resolution condition** blank for this lab — this optional encoded query lets you validate the record against the table before the AI Specialist acts on it.
+5. Set the **Execution mode**:
+   * **Supervised** – The AI Specialist presents resolution notes as a draft for a human agent to review before posting to the caller.
+   * **Autonomous** – The AI Specialist posts resolution notes directly to the caller without human review.
 6.  For this lab, select **Autonomous**.
 
     > In a production rollout, many organizations start with **Supervised** mode to build confidence in the AI Specialist's responses, then graduate to **Autonomous** as accuracy improves. For today's lab, we'll go straight to Autonomous so you can see the full end-to-end flow.
 
 ***
-
-<figure><img src=".gitbook/assets/ztsd/2026-06-24 10.35.44.png" alt=""><figcaption></figcaption></figure>
 
 ### ❇️ Configure Tasks — Communicate updates
 
@@ -126,7 +112,7 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
    * **Inbound channels:** Activity Stream — how the AI Specialist receives messages from requesters.
    * **Outbound channels:** Activity Stream — how the AI Specialist sends responses or notifications.
    * **Response templates:** Follow up, Propose a solution, and Reassign to human — these define how the AI Specialist phrases each type of update.
-3.  Leave **Disable posting to work notes** unchecked so the AI Specialist keeps posting its activity to the record's work notes.
+3. Leave **Disable posting to work notes** unchecked so the AI Specialist keeps posting its activity to the record's work notes.
 
 ***
 
@@ -154,8 +140,6 @@ Now let's see the AI Specialist in action on a real incident record.
 
     > **Be patient:** the test takes about 5-7 minutes to complete. While it's running, **All Steps** keeps updating live, showing the AI Specialist's thought process — this is your window into how it's actually reasoning through the incident.
 
-<figure><img src=".gitbook/assets/ztsd/10_test_ai_worker.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ### ❇️ Review the Performance Dashboard
@@ -169,8 +153,6 @@ Now let's see the AI Specialist in action on a real incident record.
 
     > The Performance dashboard is your command center for monitoring the AI Specialist over time. In a fresh lab instance, data will populate as the AI Specialist processes more incidents.
 
-<figure><img src=".gitbook/assets/ztsd/11_performance_dashboard.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ### ❇️ Review the Activity Log
@@ -183,9 +165,7 @@ Now let's see the AI Specialist in action on a real incident record.
    * **Assigned to** — The AI Specialist that handled it
    * **Created** — Timestamp of when the activity was created
    * **Feedback** — Thumbs up/down icons for providing feedback on the AI Specialist's performance
-3.  Toggle **Turn on live updates** to watch new activity appear in real time as the AI Specialist processes incidents.
-
-<figure><img src=".gitbook/assets/ztsd/12_activity_log.png" alt=""><figcaption></figcaption></figure>
+3. Toggle **Turn on live updates** to watch new activity appear in real time as the AI Specialist processes incidents.
 
 ***
 
@@ -194,15 +174,9 @@ Now let's see the AI Specialist in action on a real incident record.
 Select **Management** in the left-hand navigation. This is where you set access permissions, add copies of this AI Specialist, and activate it.
 
 1. Under **Manage locations and approved users**, review **Where it's managed** (Service Operations Workspace) and set **User access role(s)** — this is where you grant the roles (e.g., `itil`) that determine who can see this AI Specialist's actions in Core UI.
-
-<figure><img src=".gitbook/assets/ztsd/2026-06-24 10.37.58.png" alt=""><figcaption></figcaption></figure>
-
 2. The **Copies** section lets you clone this AI Specialist for other teams — not needed for this lab.
 3. Under **Activate**, confirm **Activate this AI specialist** is toggled **Yes**, then set the **AI specialist manager** field to **Ravi Kapoor**.
-
-<figure><img src=".gitbook/assets/ztsd/2026-06-24 10.39.33.png" alt=""><figcaption></figcaption></figure>
-
-4.  Select **Save** in the top-right corner.
+4. Select **Save** in the top-right corner.
 
 You've configured the profile, tasks, and settings. This specialist is now LIVE!
 

@@ -12,26 +12,23 @@ Creation and management of custom skills is done through Now Assist Skill Kit la
 <figure><img src="../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-You might also want to go to the incident (incident.list) table to create an incident that you can test with, however there is demo data in your instance that we can useYou might also want to go to the incident (incident.list) table to create an incident that you can test with, however there is demo data in your instance that we can use
+You might also want to go to the incident (incident.list) table to create an incident that you can test with, however there is demo data in your instance that we can useYou might also want to go to the incident (incident.list) table to create an incident that you can test with, however there is demo data in your instance that we can use
 {% endhint %}
 
-1\.	Navigate to Now Assist Skill Kit à Home to get started with a new skill creation, from there select: ![](<../../.gitbook/assets/image (31).png>)
+1\. Navigate to Now Assist Skill Kit à Home to get started with a new skill creation, from there select: ![](<../../.gitbook/assets/image (30).png>)
 
-&#x20;2\.	In the skill creation fill out the following:
+2\. In the skill creation fill out the following:
 
 * Skill name: Assignment group selector
 * Description: This skill selects assignment groups based on information in the incident
 * Default provider: Azure OpenAI
-* Default provider API: Chat Completions&#x20;  \
+* Default provider API: Chat Completions\
   \
-  Scroll down and add the itil role in the section “Apply role restrictions to skill”.  \
+  Scroll down and add the itil role in the section “Apply role restrictions to skill”.\
   Then select Skip to Prompt editor.\
-  \
-
+  \\
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
-
-
 
 <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
@@ -39,13 +36,13 @@ Creation and management of custom skills is done through Now Assist Skill Kit la
 As an alternative we could have followed the guide to complete the prompt setup however we can save you time by jumping ahead.
 {% endhint %}
 
-3\.	Now you can start building your skill:
+3\. Now you can start building your skill:
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 3.1 Add an input by hitting +, for this we will use a String input since we will use it in an AI agent. Datatype: String, Name: incidentnumber (yes, in one word)
 
-3.2 Add your prompt, to save you time we have created a prompt for you but you are free to modify the prompt if you want to change the response.&#x20;\
+3.2 Add your prompt, to save you time we have created a prompt for you but you are free to modify the prompt if you want to change the response.\
 Notice the inputs added in \{{brackets\}} we will add these in the next step.
 
 ```
@@ -108,7 +105,7 @@ Hard rules:
 - Do not output explanations, reasoning, or apologies. JSON only.
 ```
 
-3.3 Go to the “Add tools” tab to add tools.&#x20;
+3.3 Go to the “Add tools” tab to add tools.
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure></div>
 

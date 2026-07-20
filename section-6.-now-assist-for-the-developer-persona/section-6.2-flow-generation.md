@@ -4,11 +4,11 @@ Now let's create a flow with based on a prompt along with an image.
 
 #### Generate Flow from Text
 
-1. You should be back in the Workflow Studio tab.  This time, select **New > Flow.**
+1. You should be back in the Workflow Studio tab. This time, select **New > Flow.**
 
-<figure><img src="../.gitbook/assets/flow (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/flow.png" alt=""><figcaption></figcaption></figure>
 
-2. Copy and past this into the “Now Assist Directions give the flow a name, and hit Generate flow preview.&#x20;
+2. Copy and past this into the “Now Assist Directions give the flow a name, and hit Generate flow preview.
 
 ```
 Brand new process in place for next week
@@ -31,7 +31,7 @@ Step 7 - Reporting & Finance Tracking (Creative Leads, Managers & Finance/Operat
 Link spend to specific initiatives, reconcile with finance systems, and update stakeholder  
 ```
 
-3. &#x20;Review the proposed flow.  Does it follow the directions laid out by the Now Assist prompt?
+3. Review the proposed flow. Does it follow the directions laid out by the Now Assist prompt?
 
 <figure><img src="../.gitbook/assets/build3.png" alt=""><figcaption></figcaption></figure>
 
@@ -41,13 +41,13 @@ Link spend to specific initiatives, reconcile with finance systems, and update s
 
 #### Generate Flow from Image
 
-1. First, download this image:&#x20;
+1. First, download this image:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% file src="../.gitbook/assets/image.png" %}
 
-2. You should be back in the Workflow Studio tab.  This time, select **New > Flow.**     &#x20;
+2. You should be back in the Workflow Studio tab. This time, select **New > Flow.**
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,14 +58,12 @@ Link spend to specific initiatives, reconcile with finance systems, and update s
 4. Click **Generate flow preview** and let Now Assist create a flow from the image!
 
 {% hint style="info" %}
-Note: If the generation fails the first time, please attempt it again.&#x20;
+Note: If the generation fails the first time, please attempt it again.
 {% endhint %}
 
 5. Review the Flow preview on the right hand side. Did Now Assist pick up the logic required from the image?
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-5. Feel free to Discard flow, or Save and edit flow to review the AI-generated flow further.&#x20;
+5. Feel free to Discard flow, or Save and edit flow to review the AI-generated flow further.
 6. Once complete, **close the Workflow Studio tab.**
-
-<p align="center"> </p>

@@ -16,17 +16,15 @@ Tip: If you can’t see the VA icon, you’re probably not in the Employee Cente
 
 2. **Copy and paste** the following into the Now Assist window and **hit enter**
 
-> &#x20;What are my current assets?
+> What are my current assets?
 
 <figure><img src="../.gitbook/assets/chatwin.png" alt=""><figcaption></figcaption></figure>
-
-
 
 3. Now, **copy and paste** the following and **hit enter**:
 
 > I a need a new macbook ASAP, I have a critical meeting in 2 days
 
-<figure><img src="../.gitbook/assets/replacelap (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/replacelap.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/request.png" alt=""><figcaption></figcaption></figure>
 
@@ -34,14 +32,14 @@ Note how Now Assist switches tracks and follows the change in conversation. Hove
 
 <figure><img src="../.gitbook/assets/cht finish.png" alt=""><figcaption></figcaption></figure>
 
-4. &#x20;Next, **copy and paste** the following and **hit enter**
+4. Next, **copy and paste** the following and **hit enter**
 
-> &#x20;How do I connect to VPN?
+> How do I connect to VPN?
 
 <figure><img src="../.gitbook/assets/last chat.png" alt=""><figcaption></figcaption></figure>
 
 Because the Admin's assets are recorded in ServiceNow, Now Assist knows that Abel has a Mac and provides the appropriate instructions. Also, easily pivoting from question to question.
 
-**Congratulations,** you have tested search, engaged in a multi-turn conversation with Now Assist, and even ordered a replacement laptop.  You have completed this section!&#x20;
+**Congratulations,** you have tested search, engaged in a multi-turn conversation with Now Assist, and even ordered a replacement laptop. You have completed this section!
 
 <br>

@@ -1,4 +1,4 @@
-# Bonus AFTER the lab : The end-to-end flow
+# After the lab: The end-to-end flow
 
 > **Objective:** Put everything together! Use the Voice AI assistant to create an incident, assign it to the AI L1 Service Desk Specialist, and watch the full Zero Touch Support pipeline — from voice call through autonomous resolution — in action.
 
@@ -7,13 +7,7 @@
 ### ❇️ Step 1 — Navigate to the Assistant Designer
 
 1. In the filter navigator, type `Assistant Designer` and select **Conversational Interfaces > Assistant Designer**.
-2.  You'll land on the Assistant Designer page showing all configured assistants as cards.
-
-
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-01 at 5.28.26 PM.png" alt=""><figcaption></figcaption></figure>
-
-
+2. You'll land on the Assistant Designer page showing all configured assistants as cards.
 
 ***
 
@@ -25,14 +19,6 @@
 4.  Select **Start call** to initiate the voice conversation.
 
     > Your browser may prompt you to allow microphone access — select **Allow** to proceed.
-
-
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-01 at 5.29.21 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-01 at 5.34.08 PM.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -50,12 +36,6 @@
     > This confirms that the Voice AI has successfully created an incident record in ServiceNow based on your conversation.
 4. Select **End call** when the conversation is complete.
 
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.28.30 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.28.51 PM (2).png" alt=""><figcaption></figcaption></figure>
-
-
-
 ***
 
 ### ❇️ Step 4 — Open the Incident in Service Operations Workspace
@@ -66,13 +46,7 @@
 4. Locate the newly created incident. You can find it by:
    * Checking the incident list for the most recent record
    * Searching for the incident number shown in the Voice test Analysis panel
-5.  Select the incident to open it.
-
-
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.10.26 PM.png" alt=""><figcaption></figcaption></figure>
-
-
+5. Select the incident to open it.
 
 ***
 
@@ -88,12 +62,6 @@
 5.  Select **Save** in the dialog to confirm the assignment.
 
     > Once saved, the incident state will change to **In Progress** and the AI L1 Service Desk Specialist will begin working the incident autonomously.
-
-
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.15.56 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.16.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -120,10 +88,6 @@
     * 🔴 Started AI Agent "Zero Touch Service..." _(DEX remediation triggered)_
 
     > Watch this in real time — the AI Specialist is classifying the incident, researching knowledge sources, identifying potential solutions, and executing the resolution autonomously. When a device-level fix is needed, it triggers the DEX remediation agent to act directly on the end-user's device.
-
-
-
-<figure><img src=".gitbook/assets/ztsd/Screenshot 2026-05-04 at 9.32.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
