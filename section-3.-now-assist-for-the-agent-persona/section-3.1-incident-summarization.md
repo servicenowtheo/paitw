@@ -12,21 +12,17 @@
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-4. In that list view, select the “**Filter**’ button with the Gen AI Sparkle on the upper left side.
+4. In that list view, select the **“+ Explore”** button (tooltip “Explore with AI”) near the top-right of the list toolbar — this is the Gen-AI feature; the plain “Filter” button next to it is just the traditional filter-condition builder and has no AI input.
 
-<figure><img src="../.gitbook/assets/Picture15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/3.1-explore-panel.png" alt=""><figcaption></figcaption></figure>
 
-5. **Select and copy the following**, and watch Now Assist create the filter for you
+5. This opens a small floating panel with an **“Ask Now Assist a question about data…”** input. **Select and copy the following** into that input and submit it:
 
 > Any incident that has a description that contains Versioning errors
 
-<figure><img src="../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
+Unlike the old Filter-based flow, this doesn’t filter the underlying list — Now Assist answers directly inside the panel, naming the matching incident(s) by number. Your incident number may differ from the one shown here — at time of writing, this returned **INC0010017** (“CI/CD pipeline throwing versioning errors after library upgrade”).
 
-Select the "**Apply**" to process the query
-
-<figure><img src="../.gitbook/assets/Picture6.png" alt=""><figcaption></figcaption></figure>
-
-6. **Select the incident link**. Your incident number may be different from the one shown. Now, open that incident in the Service Operations workspace by clicking on the incident number
+6. Take note of the incident number from the AI’s answer, then open that record using the global search bar at the top of the page (type the incident number and select the exact match) — the list behind the panel is unchanged, so you won’t find it by scrolling the grid.
 
 <figure><img src="../.gitbook/assets/Picture7.png" alt=""><figcaption></figcaption></figure>
 

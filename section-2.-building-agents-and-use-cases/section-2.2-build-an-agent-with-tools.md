@@ -15,9 +15,9 @@
 * Now scroll through the results, and see how Now Assist has filled in the AI Agent role, list of steps, and Agent name.
 * You will see a “**Possible duplications found**” dialog pop up, click “**Ignore and continue**”
 
-4. Click on “**Recommended Tools**”, a list of Suggested tools will appear, let’s select the relevant tools in this order by click on the “+” next to each tool type. Then Hit '**Save and Continue'**
+4. Click on “**Recommend Tools**”, a list of Suggested tools will appear, let’s select the relevant tools in this order by click on the “+” next to each tool type. Then Hit '**Save and Continue'**
 
-**\*\*\*If you don't see the tools below when you click Recommended Tools, add each tool manually using the Add tool button and choose the exact ones listed below from the existing. The instructor can help guide you\*\*\*\***
+**\*\*\*If you don't see the tools below when you click Recommend Tools, add each tool manually using the Add tool button and choose the exact ones listed below from the existing. The instructor can help guide you\*\*\*\***
 
 <figure><img src="../.gitbook/assets/Unknown image (115)" alt=""><figcaption></figcaption></figure>
 

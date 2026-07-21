@@ -8,11 +8,11 @@
 
 <figure><img src="../.gitbook/assets/nap1.png" alt="" width="158"><figcaption></figcaption></figure>
 
-2. Click on the Suggest "**Configuration Items for a change request**” card.
+3. Click on the Suggest "**Configuration Items for a change request**” card.
 
 <figure><img src="../.gitbook/assets/results1.png" alt="" width="364"><figcaption></figcaption></figure>
 
-2. This agent searches the CMDB for CIs that may be impacted by this change.
+4. This agent searches the CMDB for CIs that may be impacted by this change.
 
 You could select any of the Cis (or multiple) to associate with the change
 

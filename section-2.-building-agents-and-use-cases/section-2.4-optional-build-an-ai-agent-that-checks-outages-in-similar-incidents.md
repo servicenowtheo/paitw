@@ -7,10 +7,10 @@ description: >-
 
 # Section 2.4 - OPTIONAL- Build an AI Agent that checks outages in similar incidents
 
-First, let’s create an outage in incident INC0010248.
+First, let’s create an outage in an incident. Find the incident pre-seeded for this lab by its short description — **"Need help with SSO configuration for third-party tool"** (`INC0010248` on this instance, though the exact number may differ on yours — note that on some instances this number is shared by more than one incident, so match by short description, not just the number).
 
 1. Open the incidents table (**All > Incident > All)**
-2. Search for I**NC0010248** and open it
+2. Search for the incident by its short description above and open it
 3. Scroll down to the bottom of the page, and select the **Outages tab.** If the tab is not visible, ask your instructor how you can add it as a related list.
 4. Click **New**
 
@@ -291,80 +291,3 @@ Now, let's open AI Agent Studio and build another AI agent. This time, we will d
 <figure><img src="../.gitbook/assets/test1.png" alt=""><figcaption></figcaption></figure>
 
 Congratulations! You have completed the advanced part of the lab!
-
-17. In the Output Variables window (below the Script window), delete both existing variables, and create the following:
-
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
-18. On the left, click **Outputs,** then click **Edit Outputs**
-19. Delete the message output (confirm the pop-up window)
-20. Change the label from “References” to “similar records.”
-21. Click Create Output with the label “outage details”, the name “outage\_details”, and the type String.
-
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
-
-22. Click on **Exit Edit Mode**
-23. Drag and drop the script step variables from the right into their corresponding boxes in the middle, like this:
-
-<figure><img src="../.gitbook/assets/outage3.png" alt=""><figcaption></figcaption></figure>
-
-24. Click **Test**
-25. Type “incident” into the type field, and “INC0010004” into the record\_number field, then click **Run Test**
-
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
-
-26. When it appears, click “Your test has finished running. View the Action execution details.” Results should look like this.
-
-<figure><img src="../.gitbook/assets/outage5.png" alt=""><figcaption></figcaption></figure>
-
-27. Return to the previous window, and click **Save, then Publish**
-28. Close the Workflow Studio browser tab, and return to the main lab browser tab
-29. Let’s change the Application Scope back to Global
-
-<figure><img src="../.gitbook/assets/outage6.png" alt=""><figcaption></figcaption></figure>
-
-Now let's create another Flow Action for creating an outage.
-
-30. Open Flow Designer (**All > Flow Designer**) and search for “outage” under the Actions tab.
-
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
-
-31. Click on **Create Outage** and copy the action, name it “\[Your Initials] Create outage”
-
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-
-32. Delete the following inputs:
-    1. “configuration item"
-    2. “type”
-    3. “begin”
-
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
-
-33. On the left, click **Script Step** and delete the following variables:
-    1. "cmdbCI"
-    2. “type”
-    3. “begin”
-
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-
-34. Replace script with this one:
-
-```
-(function execute(inputs, outputs) { 
-  var parentTable = GlideDBObjectManager.get().getBase(inputs.source.getRecordClassName()); 
-  var outage = new GlideRecord("cmdb_ci_outage"); 
-
-  outage.initialize(); 
-  //outage.setValue("cmdb_ci", inputs.cmdbCi); 
-  outage.setValue("type", "Degradation"); 
-  //outage.setValue("begin", inputs.begin); 
-  outage.setValue("short_description", "degradation"); 
-  if (parentTable == "task") 
-    outage.setValue("task_number", inputs.source.getUniqueValue()); 
-  outputs.OutageRecord = outage.insert(); 
-  // Add this line to get the outage number as a string 
-  outputs.outagerecordnumber = outage.getValue("number");  
-})(inputs, outputs);
-```
-
-35.

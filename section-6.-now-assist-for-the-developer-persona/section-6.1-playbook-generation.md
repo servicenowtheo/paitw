@@ -47,10 +47,16 @@ Everyone in the room has probably drawn a brilliant flow on a whiteboard and the
 >
 > _._
 
-4. Enter a Flow name in the ‘Attach an Image section, select the file you just downloaded, then click “**Generate flow preview”**.
+4. First, download this image:
+
+<figure><img src="../.gitbook/assets/imagefordownload.jpg" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/imagefordownload.jpg" %}
+
+5. Enter a Flow name in the ‘Attach an Image section, select the file you just downloaded, then click “**Generate flow preview”**.
 
 <figure><img src="../.gitbook/assets/imagefor build.png" alt=""><figcaption></figcaption></figure>
 
-5. Take a closer look at the resultant flow! You have a huge jumpstart on the playbook development with help from Now Assist for Creator. When you are finished, **click Discard playbook.**
+6. Take a closer look at the resultant flow! You have a huge jumpstart on the playbook development with help from Now Assist for Creator. When you are finished, **click Discard playbook.**
 
 <figure><img src="../.gitbook/assets/discard.png" alt=""><figcaption></figcaption></figure>

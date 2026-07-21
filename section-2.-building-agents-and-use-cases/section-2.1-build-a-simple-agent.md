@@ -6,8 +6,11 @@ Note: In the following lab, we will talk through prompting many times. To learn 
 
 Now let’s begin!
 
-1. Open AI Agent Studio (All > AI Agent Studio > Overview)
-2. Locate the section titled, **“Active in your Organization”.** Select the **AI Agents tab,** then click **“Add->Chat”.**
+1. Open AI Agent Studio (All > AI Agent Studio > Overview). The Overview page shows a "Ready-made solutions" section with tabs for AI specialists, Agentic workflows, and AI agents.
+
+<figure><img src="../.gitbook/assets/2.1-overview.png" alt=""><figcaption></figcaption></figure>
+
+2. Click the **Create and manage** tab (top nav), then the **AI agents** tab, then click **Add**.
 3. A configuration page for “New AI agent” will open. Complete the fields with the information given below. In the Define the specialty Area, click on **‘Generate details.’**
 4. Copy and paste the following into the dialog, we will Now Assist in filling in our fields for us\
    \
@@ -33,10 +36,10 @@ Note: In a non-lab environment and with MCP, you could expose agents to third pa
    1. Define user access -> select '**Any Authenticated user**’ from the User access drop-down, press "Save and continue".
    2. Define data access -> Select the **Dynamic user**, search for and select **‘itil’** and '**admin**' from the approved roles, press "Save and continue".
 9. Next, in the Add triggers section, click “**Save and continue**”.
-10. Next, in the Select channels and status, you can enable Agents to communicate via the Now Assist for Virtual Agent (via Employee center, or Service Portal), but for this example, we will NOT change the selection.
-11. In the Communicate, this AI agent’s process to users, click on “**Generate messages**” letting Now assist create them for you, when the agent is ‘thinking’ and when it has completed its task
-12. On the **Activation status** area, make sure the Status toggle is set to **On**
-13. Click **Save and Test**
+10. Next, on the **Select channels and status** page, you can enable Agents to communicate via the Now Assist for Virtual Agent (via Employee center, or Service Portal), but for this example, we will NOT change the selection. **Communicate** and **Activation status** are sub-sections further down this same page (not separate wizard steps) — scroll down to find them:
+    1. Under **Communicate**, this AI agent’s process to users, click on “**Generate messages**” letting Now Assist create them for you, when the agent is ‘thinking’ and when it has completed its task
+    2. Under **Activation status**, make sure the Status toggle is set to **On**
+11. Click **Save and Test**
 
 **Now let's test the agent!**
 
