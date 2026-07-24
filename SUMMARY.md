@@ -47,5 +47,3 @@
   * [Exercise 2: DEX Remediation Trigger AI Agent](bonus/ztsd-exercise-2-dex-remediation-trigger-ai-agent.md)
   * [Exercise 3: The end-to-end flow](bonus/ztsd-exercise-3-the-end-to-end-flow.md)
   * [Exercise 4: Give your specialist Knowledge](bonus/ztsd-exercise-4-give-your-specialist-knowledge.md)
-  * [Voice Assistant Configuration and Testing](bonus/ztsd-voice-assistant-configuration-and-testing.md)
-  * [After the lab: The end-to-end flow](bonus/ztsd-after-the-lab-end-to-end-flow.md)

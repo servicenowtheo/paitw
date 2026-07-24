@@ -1,18 +1,19 @@
 # Exercise 2: DEX Remediation Trigger AI Agent
 
-> **Objective:** Verify that the DEX remediation trigger AI agent is active and review how it automatically executes remedial actions on end-user devices to resolve common device and application issues.
+> **Objective:** Verify that the DEX remediation trigger AI agent is active and review how it autonomously diagnoses an issue, matches a remedial action, resolves the target device, and requests end-user consent — the decision-making steps this lab can fully prove. (The final device-side execution step needs a physical Agent Client Collector this lab doesn't provision — see the callout below and Exercise 3, Part D.)
 >
-> ⏱️ **Total time:** \~5 minutes
+> ⏱️ **Total time:** ~5 minutes
 
 ***
 
 ### ❇️ Navigate to AI Agent Studio — Create and manage
 
-1.  In the filter navigator, type **AI Agent Studio** and select **AI Agent Studio > Overview**.
+1. In the filter navigator, type **AI Agent Studio** and select **AI Agent Studio > Overview**.
 
-    > **Note:** AI Agent Studio is the workspace for _all_ AI agents across your organization — not just the Service Desk specialist you configured in Exercise 1. Getting comfortable navigating here pays off well beyond this lab.
+    > **Note:** AI Agent Studio is the workspace for *all* AI agents across your organization — not just the Service Desk specialist you configured in Exercise 1. Getting comfortable navigating here pays off well beyond this lab.
 2. On the **Ready-made solutions** panel, select the **AI agents** tab.
-3. Select **Explore all** to view the full list of AI agents in your organization.
+3.  Select **Explore all** to view the full list of AI agents in your organization.
+
 
 ***
 
@@ -23,7 +24,8 @@
 
     > **Tip:** There are 100+ agents in the list. Sorting by Name makes it much easier to find what you're looking for.
 3. Before opening the agent, confirm the **Status** column shows **Active**.
-4. Select **DEX remediation trigger AI agent** to open it.
+4.  Select **DEX remediation trigger AI agent** to open it.
+
 
 ***
 
@@ -33,7 +35,7 @@ You are now in the **Agent-guided setup** for the DEX remediation trigger AI age
 
 1. On the **Define the specialty** page, review the following:
    * **AI agent name:** DEX remediation trigger AI agent
-   * **AI agent description:** Read through the description to understand what the agent does. This agent receives a resolution plan, checks for supported remedial actions, and executes them on end-user devices (Windows OS and Mac OS endpoints) to resolve common device and application issues.
+   * **AI agent description:** Read through the description to understand what the agent does. This agent receives a resolution plan, checks for supported remedial actions, resolves the target end-user device (Windows OS and Mac OS endpoints), and requests the end-user's consent to dispatch the fix — see the note below on where autonomous decision-making ends and real device-side execution would begin.
 2. Note the **four supported remedial actions** this agent can perform:
    * Restarting Zscaler service (Windows OS / Mac OS)
    * Clearing Microsoft Teams application cache (Windows OS / Mac OS)
@@ -47,9 +49,12 @@ You are now in the **Agent-guided setup** for the DEX remediation trigger AI age
     * **Add triggers** — What events cause this agent to activate
     * **Select channels and status** — Communication channels and activation status
 
-    > **Note:** "Add tools and information" is where you directly restrict _which_ tools and data sources an agent can reach — a separate control from the prompt/instructions you write on "Define the specialty." Restricting both together is what keeps an agent's blast radius contained.
+    > **Note:** "Add tools and information" is where you directly restrict *which* tools and data sources an agent can reach — a separate control from the prompt/instructions you write on "Define the specialty." Restricting both together is what keeps an agent's blast radius contained.
 
-    > The DEX remediation trigger AI agent works hand-in-hand with the L1 Service Desk AI Specialist. When the AI Specialist investigates an incident and determines that a device-level remediation is needed, it triggers this DEX agent to execute the fix directly on the end-user's device — no human intervention required. This is what makes the Zero Touch Support experience truly end-to-end.
+    > The DEX remediation trigger AI agent works hand-in-hand with the L1 Service Desk AI Specialist. When the AI Specialist investigates an incident and determines that a device-level remediation is needed, it triggers this DEX agent, which requests the end-user's consent and then dispatches the fix to their device.
+    >
+    > **A note on what "no human intervention" means here:** the *decision-making* — diagnosis, matching a remedial action, resolving the correct device, and requesting consent — is genuinely autonomous end-to-end, and you'll prove that yourself in Exercise 3, Part D. The final step, a real device carrying out the fix and reporting back, requires a physical Agent Client Collector (ACC) reporting through a MID Server or ITOM Cloud Services gateway — infrastructure this lab doesn't provision. Exercise 3 walks through exactly where that boundary is and why it's expected, not a bug.
+
 
 ***
 
@@ -62,4 +67,4 @@ You have successfully:
 * Reviewed the agent's specialty and supported remedial actions
 * Explored the agent's guided setup configuration
 
-🎉 **Nice work!** The DEX component of your Zero Touch Support experience is ready to go. Combined with the L1 Service Desk AI Specialist you configured earlier, you now have a complete autonomous support pipeline -
+🎉 **Nice work!** The DEX component of your Zero Touch Support experience is ready to go. Combined with the L1 Service Desk AI Specialist you configured earlier, you now have a pipeline that autonomously diagnoses, matches, resolves the device, and requests consent end-to-end — the last mile (a real device carrying out the fix) is outside this lab's scope, as Exercise 3 Part D will show.

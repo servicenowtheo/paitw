@@ -2,13 +2,13 @@
 description: Blast from the past
 ---
 
-# Exercise 4: Give your specialist Knowledge
+# Excercise 4: Give your specialist Knowledge
 
 > **Objective:** Author a brand new knowledge article in the IT Knowledge Base, publish it, then create an incident that the AI L1 Service Desk Specialist will deflect using your article. This demonstrates how the AI Specialist leverages your organization's knowledge content to resolve incidents autonomously.
 >
 > 🧠 **This is where Zero Touch Support gets personal** — the AI Specialist is only as good as the knowledge you give it. Better articles mean faster, more accurate resolutions.
 >
-> ⏱️ **Total time:** \~10 minutes
+> ⏱️ **Total time:** ~10 minutes
 
 > **Who to be:** Stay impersonating **Ravi Kapoor** from Exercise 3 for this exercise — his role set includes `knowledge`, which is enough to author and edit KB articles. If you ended impersonation, logging back in as the **System Administrator** works too.
 
@@ -17,7 +17,8 @@ description: Blast from the past
 ### ❇️ Step 1 — Navigate to Knowledge Center
 
 1. In the filter navigator, type `Knowledge Center` and select **Knowledge > Knowledge Center**.
-2. You'll land on the Knowledge Center home page showing your knowledge bases, most viewed articles, and configuration options.
+2.  You'll land on the Knowledge Center home page showing your knowledge bases, most viewed articles, and configuration options.
+
 
 ***
 
@@ -28,7 +29,8 @@ description: Blast from the past
    1. **Select knowledge base:** Choose **IT**
    2. **Select article template:** Choose **Standard**
    3. The **Article template preview** will show the Standard template on the right.
-3. Select **Next** in the top-right corner.
+3.  Select **Next** in the top-right corner.
+
 
 ***
 
@@ -44,6 +46,7 @@ description: Blast from the past
     > **Watch for this:** the Text block template drops in placeholder copy like "insert text here." Make sure you delete it before pasting your content, or double-check afterward that it didn't survive alongside your real text.
 
     > **Pick a scenario below and copy the sample content into your article:**
+
 
 ***
 
@@ -155,6 +158,7 @@ description: Blast from the past
 
     > On this lab's Knowledge Base, articles publish immediately — no separate approval step required. If your instance is configured differently, the article may instead move to **Review** and show the banner _"This knowledge item is in review."_ If that happens, complete Step 5 below before continuing; otherwise skip straight to Step 6.
 
+
 ***
 
 ### ❇️ Step 5 — Approve the Knowledge Article (only if your article is stuck in Review)
@@ -163,16 +167,21 @@ Skip this step if your article's **Workflow** field already shows **Published** 
 
 1. On the knowledge article record, select the **Approvals** tab.
 2. Note the **Approver** name listed (e.g., `Bernard Laboy`).
-3. Select your **user avatar** in the top-right corner of the ServiceNow header.
-4. Select **Impersonate another user**.
-5. In the **Impersonate user** dialog, type the approver's name (e.g., `Bernard Laboy`) and select them from the list.
-6. Select **Impersonate user**.
-7. Once impersonating the approver, navigate to **My Approvals**:
+
+
+1. Select your **user avatar** in the top-right corner of the ServiceNow header.
+2. Select **Impersonate another user**.
+3. In the **Impersonate user** dialog, type the approver's name (e.g., `Bernard Laboy`) and select them from the list.
+4. Select **Impersonate user**.
+
+
+1. Once impersonating the approver, navigate to **My Approvals**:
    1. In the filter navigator, type `My Approvals` and select **Service Desk > My Approvals**.
-8. Sort the list by **Created** (click the Created column header) to find the most recent approval request.
-9. Select the approval record for your knowledge article (e.g., `Knowledge: KB0010001 v0.02`).
-10. Review the **Summary of item being approved** at the bottom to confirm it's your article.
-11. Select **Approve**.
+2. Sort the list by **Created** (click the Created column header) to find the most recent approval request.
+3. Select the approval record for your knowledge article (e.g., `Knowledge: KB0010001 v0.02`).
+4. Review the **Summary of item being approved** at the bottom to confirm it's your article.
+5. Select **Approve**.
+
 
 **End impersonation:** Select your user avatar in the top-right corner and select **End impersonation** to return to your admin account.
 
@@ -205,7 +214,7 @@ Now create an incident that the AI Specialist can resolve using your new article
 ### ❇️ Step 7 — Watch the AI Specialist Deflect the Incident
 
 1. On the right sidebar, open the **Agentic Processes** menu item.
-2.  Select **Show steps** to watch the AI Specialist work through the incident in real time.
+2. Select **Show steps** to watch the AI Specialist work through the incident in real time.
 
     > **Be patient:** this takes about 8-10 minutes.
 3. Observe as the AI Specialist:
@@ -216,6 +225,7 @@ Now create an incident that the AI Specialist can resolve using your new article
 4.  Review the **Activity** feed for the AI Specialist's resolution notes — you should see content sourced from the article you just wrote!
 
     > 🎉 **You did it!** You've just closed the loop on Zero Touch Support. The knowledge you create directly powers the AI Specialist's ability to resolve incidents. Better knowledge articles = higher deflection rates = fewer tickets for your human agents.
+
 
 ***
 
