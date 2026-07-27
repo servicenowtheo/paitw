@@ -12,14 +12,12 @@
 
     > You'll land on the AI Agent Studio Overview page, where you can see ready-made AI automations and any AI Specialists already active in your organization.
 
-
 ***
 
 ### ❇️ Open the L1 Service Desk AI Specialist for editing
 
 1. On the AI Agent Studio Overview page, locate the **L1 Service Desk AI Specialist** card under _Ready-made AI automations > AI specialists_.
 2. Select **View Details** on the card — this opens the full configuration experience directly. (Note: you may also see an **Unpublish** action on the card, which is not needed for this exercise.)
-
 
 ***
 
@@ -36,13 +34,9 @@ You are now on the **Profile** page for the L1 Service Desk AI Specialist. This 
 
     > Assignment groups determine which team's tickets the AI Specialist will pick up. Adding IT Support means the AI Specialist will begin handling incidents assigned to that group.
 5. Review the **Roles** section. The AI Specialist should already have the following roles assigned:
-   * `sn_dex.engineer`
-   * `sn_dex.ai_user`
    * `sn_service_desk_agent`
    * `itil`
-   * `sn_dex.service_desk_user`
 6.  Select **Save** in the top-right corner.
-
 
 ***
 
@@ -57,7 +51,6 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 3.  You can add or remove fields depending on what you'd like the AI Specialist to predict when triaging new incidents.
 
     > These are the fields the AI Specialist will automatically populate when it picks up a new incident. Tailor this list to match your organization's classification requirements.
-
 
 ***
 
@@ -77,7 +70,6 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
     | Solution proposed | → | Resolved       |
 
     > **Note:** These state mappings may differ in your production instances if you've modified the out-of-the-box incident state model. Adjust the mappings to match your organization's workflow.
-
 
 ***
 
@@ -109,7 +101,6 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
     > In a production rollout, many organizations start with **Supervised** mode to build confidence in the AI Specialist's responses, then graduate to **Autonomous** as accuracy improves. For today's lab, we'll go straight to Autonomous so you can see the full end-to-end flow.
 
 ***
-
 
 ### ❇️ Configure Tasks — Communicate updates
 
@@ -146,7 +137,6 @@ Now let's see the AI Specialist in action on a real incident record.
 
     > **Be patient:** the test takes about 5-7 minutes to complete. While it's running, **All Steps** keeps updating live, showing the AI Specialist's thought process — this is your window into how it's actually reasoning through the incident.
 
-
 ***
 
 ### ❇️ Review the Performance Dashboard
@@ -159,7 +149,6 @@ Now let's see the AI Specialist in action on a real incident record.
 3.  Use the **Assignment group** and **Date** filters to narrow the data.
 
     > The Performance dashboard is your command center for monitoring the AI Specialist over time. In a fresh lab instance, data will populate as the AI Specialist processes more incidents.
-
 
 ***
 
@@ -175,7 +164,6 @@ Now let's see the AI Specialist in action on a real incident record.
    * **Feedback** — Thumbs up/down icons for providing feedback on the AI Specialist's performance
 3.  Toggle **Turn on live updates** to watch new activity appear in real time as the AI Specialist processes incidents.
 
-
 ***
 
 ### ❇️ Configure management of the L1 Service Desk AI Specialist
@@ -184,10 +172,8 @@ Select **Management** in the left-hand navigation. This is where you set access 
 
 1. Under **Manage locations and approved users**, review **Where it's managed** (Service Operations Workspace) and set **User access role(s)** — this is where you grant the roles (e.g., `itil`) that determine who can see this AI Specialist's actions in Core UI.
 
-
 2. The **Copies** section lets you clone this AI Specialist for other teams — not needed for this lab.
 3. Under **Activate**, confirm **Activate this AI specialist** is toggled **Yes**, then set the **AI specialist manager** field to **Ravi Kapoor**.
-
 
 4.  Select **Save** in the top-right corner.
 
@@ -212,4 +198,4 @@ You have successfully:
 * Reviewed the Performance dashboard and Activity log
 * Activated the AI Specialist
 
-🎉 **Congratulations!** Your L1 Service Desk AI Specialist is now live and ready to autonomously resolve incidents. Next up — let's configure your DEX components to complete the Zero Touch Support experience.
+🎉 **Congratulations!** Your L1 Service Desk AI Specialist is now live and ready to autonomously resolve incidents. Next up — let's put it to work on a real queue of incidents.

@@ -44,6 +44,5 @@
 * [Bonus: Zero-Touch Service Desk (ZTSD)](bonus/README.md)
   * [Getting started](bonus/ztsd-getting-started.md)
   * [Exercise 1: L1 Service Desk AI Specialist Setup & Configuration](bonus/ztsd-exercise-1-l1-service-desk-ai-specialist-setup-and-configuration.md)
-  * [Exercise 2: DEX Remediation Trigger AI Agent](bonus/ztsd-exercise-2-dex-remediation-trigger-ai-agent.md)
-  * [Exercise 3: The end-to-end flow](bonus/ztsd-exercise-3-the-end-to-end-flow.md)
-  * [Exercise 4: Give your specialist Knowledge](bonus/ztsd-exercise-4-give-your-specialist-knowledge.md)
+  * [Exercise 2: The end-to-end flow](bonus/ztsd-exercise-2-the-end-to-end-flow.md)
+  * [Exercise 3: Give your specialist Knowledge](bonus/ztsd-exercise-3-give-your-specialist-knowledge.md)

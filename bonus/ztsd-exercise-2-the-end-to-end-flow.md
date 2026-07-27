@@ -1,10 +1,10 @@
-# Exercise 3: The end-to-end flow
+# Exercise 2: The end-to-end flow
 
-> **Objective:** Put everything together! Watch the L1 Service Desk AI Specialist work a real queue of incidents — some it resolves entirely on its own inside ServiceNow, one it correctly declines to force a fit on and escalates instead, and one (Zscaler/DEX) where it takes autonomous action all the way through requesting your consent, stopping at the point where this lab's environment can't go further.
+> **Objective:** Put everything together! Watch the L1 Service Desk AI Specialist work a real queue of incidents — some it resolves entirely on its own inside ServiceNow, and one it correctly declines to force a fit on and escalates instead.
 >
-> ⏱️ **Total time:** ~35 minutes
+> ⏱️ **Total time:** ~25 minutes
 
-This exercise is split into four parts. **Parts A–C are the primary, reliable proof of Zero Touch Support** — the AI Specialist resolving and triaging real incidents entirely within ServiceNow, no additional infrastructure required. **Part D is an advanced, optional walkthrough** of the DEX (Digital End-user Experience) handoff — it demonstrates real autonomous diagnosis, matching, and consent, but stops short of claiming a completed device-level fix, for reasons explained in that section.
+This exercise is split into three parts, all of them the primary, reliable proof of Zero Touch Support — the AI Specialist resolving and triaging real incidents entirely within ServiceNow, no additional infrastructure required.
 
 ***
 
@@ -13,7 +13,6 @@ This exercise is split into four parts. **Parts A–C are the primary, reliable 
 1. From the icon on top right, pull down and choose impersonate
 2.  Choose **Ravi Kapoor**
 3.  Select **Impersonate user** to confirm.
-
 
 ***
 
@@ -79,48 +78,6 @@ Not every incident should be auto-resolved — an AI Specialist that forces a fi
 
 ***
 
-## Part D — Advanced (Optional): DEX Handoff for Device-Level Issues
-
-> This section is intentionally scoped to **diagnosis, matching, and consent** — not completed device remediation. Real device-level execution requires a physical endpoint running a real Agent Client Collector (ACC) that reports back through a MID Server or ITOM Cloud Services gateway. This lab environment doesn't have that infrastructure, so this walkthrough stops at the point where a real deployment would hand off to it. That's a correctly-designed platform boundary, not a bug in this lab.
-
-### ❇️ Step 8 — Assign the Zscaler tunnel incident
-
-1. Find the incident pre-seeded for this lab by its short description — **"ZScaler tunnel dropping — cannot reach internal apps"** (the exact number may differ on your instance).
-
-    > **Note:** If this incident isn't in **New** state, update its state to **New** before continuing so the assignment step below triggers correctly.
-2. On the incident record, navigate to the **Details** tab, scroll to **Assignment**, and in **Assigned to** type `ai` and select your L1 Service Desk AI Specialist. Confirm the **Assign** dialog's Now Assist-generated summary, then select **Save**.
-
-    > **Note:** The screenshots below may not exactly match what you see on your instance — if they don't, trust the written steps over the picture.
-
-
-### ❇️ Step 9 — Watch diagnosis, matching, and consent
-
-1. On the right sidebar, open **Agentic Processes** and select **Show steps**.
-2.  Observe the AI Specialist working through each stage:
-
-    * ✅ Started AI Agent "Zero Touch Service..."
-    * ✅ Fetching details of the given task
-    * ✅ Task details fetched
-    * ✅ Solution research complete
-    * ✅ Data sources fetched
-    * ✅ Finding potential solutions
-    * ✅ Solutions fetched — this is where a real device diagnosis (not just KB research) runs, when the incident's linked device is DEX-tracked
-    * ✅ Non-customer actions filtered
-    * 🔵 A **consent request** is generated, proposing a specific remedial action (e.g., "Restart Zscaler service") and asking the caller to approve before anything executes on their device
-
-    > **Be patient:** this can take 5-10 minutes, and it's normal to see "Checked on remaining steps" appear several times.
-
-    > **What you may also see, and why it's fine:** the device-diagnosis step doesn't run for every incident on every attempt — this is a known, still-open behavior in the underlying platform, not something wrong with your setup. If it's skipped, the AI Specialist will still correctly identify a matching remedial action from the resolution catalog, but won't request consent for an action it can't tie to a real device.
-3. Review the incident's **Activity** feed and the consent request record generated for the caller. This is the proof point for this section: the AI Specialist correctly diagnosed a device-level issue, matched it to a real supported remedial action, resolved the correct device identifier, and asked for permission before acting — all autonomously.
-
-### ❇️ Step 10 — Where this lab stops, and why
-
-Once consent is granted, the platform hands off to `Trigger remedial actions`, which waits for a real device-side execution callback — the signal that a physical endpoint actually ran the fix and reported back. In a production deployment with real Agent Client Collectors, MID Servers, and ITOM Cloud Services, this closes the loop automatically. **In this lab, there is no physical device to report that callback, so the flow will remain in a waiting state indefinitely rather than complete.**
-
-> Do **not** interpret a "Waiting" execution state past this point as a failure of your configuration — it's the expected boundary of a lab without physical endpoints. The value of this exercise is everything that happened *before* this point: real diagnosis, real matching against the supported remedial-action catalog, a real, correctly-resolved device identifier, and a real consent request — the parts of Zero Touch Support that are genuinely proven end-to-end in this environment.
-
-***
-
 ### Now go through the rest of Ravi's queue
 
 You can continue through any remaining incidents assigned to Ravi and reassign them to your L1 Specialist the same way. Expect a similar mix of outcomes to what you just saw in Parts A–C: most resolve autonomously, some correctly escalate. That's Zero Touch Support working as designed — autonomous where it can be confident, and handing off cleanly where it can't.
@@ -132,6 +89,5 @@ You have successfully:
 * Watched the AI Specialist **autonomously resolve** a real incident end-to-end (Monitor request)
 * Watched the AI Specialist **correctly escalate** an incident it couldn't confidently match (Zoom license)
 * Seen a **known reliability caveat** in action, and understood why it's disclosed rather than hidden (Password Reset)
-* Watched the AI Specialist perform **real device diagnosis, matching, and consent** for a Zscaler/DEX issue, and understood exactly where full autonomous device remediation requires infrastructure beyond this lab
 
-**You've just experienced Zero Touch Support — where it's fully proven today, and where the platform's own boundaries are.** 🎉
+**You've just experienced Zero Touch Support — autonomous resolution where the platform can be confident, and a clean handoff where it can't.** 🎉
