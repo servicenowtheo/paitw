@@ -6,6 +6,8 @@
 
 This exercise is split into three parts, all of them the primary, reliable proof of Zero Touch Support — the AI Specialist resolving and triaging real incidents entirely within ServiceNow, no additional infrastructure required.
 
+> **If nothing happens after you assign an incident below** — no work notes, no activity, total silence — don't re-configure anything. This is almost always the known trigger-activation gap called out at the end of Exercise 1: ask your instructor to complete the privileged-account activation step, then reassign the incident.
+
 ***
 
 ### ❇️ Step 1 — Impersonate Ravi Kapoor

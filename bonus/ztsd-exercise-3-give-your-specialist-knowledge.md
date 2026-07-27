@@ -189,7 +189,7 @@ Now create an incident that the AI Specialist can resolve using your new article
 1. Navigate to **Service Operations Workspace** (Workspaces > Service Operations Workspace), select the **List** button on the far left, then under **Incidents** select **All**, then select **New**.
 2.  Create a new incident and fill in the following fields:
 
-    * **Caller:** `Able Tuter`. **Note:** this persona doesn't exist on every instance — if you don't find them, pick any other available employee persona instead.
+    * **Caller:** `Abel Tuter`. **Note:** this persona doesn't exist on every instance — if you don't find them, pick any other available employee persona instead.
     * **Channel:** `Email`
     * **Short description:** Enter a description that matches your article. For example:
 
@@ -218,6 +218,8 @@ Now create an incident that the AI Specialist can resolve using your new article
 4.  Review the **Activity** feed for the AI Specialist's resolution notes — you should see content sourced from the article you just wrote!
 
     > 🎉 **You did it!** You've just closed the loop on Zero Touch Support. The knowledge you create directly powers the AI Specialist's ability to resolve incidents. Better knowledge articles = higher deflection rates = fewer tickets for your human agents.
+
+    > ⚠️ **If the AI Specialist escalates to a human instead of citing your article**, the most likely cause isn't anything you did wrong — it's that AI Search hasn't re-indexed the Knowledge Base since you published. A brand-new article isn't searchable until the `kb_knowledge` AI Search datasource runs its next indexing pass, and on a fresh lab instance that can be a while after the article goes live. Ask your instructor to trigger a reindex of the Knowledge Base search source, then create a fresh incident (an already-processed one won't reprocess) and try again.
 
 ***
 

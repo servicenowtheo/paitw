@@ -30,7 +30,7 @@ You are now on the **Profile** page for the L1 Service Desk AI Specialist. This 
     > For example: First name: `Athena`
 2. Scroll down to review the **Capabilities** section — this shows the types of work the AI Specialist can handle: `General inquiries`, `Laptop issues`.
 3. Scroll down to the **Assignment groups** section.
-4.  In the Assignment groups field, type `IT S` and select **IT Support** from the dropdown to add the AI Specialist to the IT Support group.
+4.  Confirm **IT Support** is listed. On a lab instance provisioned from the current ICE package, it's usually already there by default — a role-fix step run during provisioning adds it for you. If it's missing, type `IT S` and select **IT Support** from the dropdown to add it yourself.
 
     > Assignment groups determine which team's tickets the AI Specialist will pick up. Adding IT Support means the AI Specialist will begin handling incidents assigned to that group.
 5. Review the **Roles** section. The AI Specialist should already have the following roles assigned:
@@ -102,24 +102,28 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 
 ***
 
-### ❇️ Configure Tasks — Communicate updates
+### ❇️ Configure Tasks — Response formatting
 
-1. Select **Communicate updates** from the task list.
+> **Note:** on current platform versions this task is labeled **Response formatting** — it's the same configuration area older guide versions called "Communicate updates," just renamed.
+
+1. Select **Response formatting** from the task list.
 2. In the Settings panel, review:
-   * **Inbound channels:** Activity Stream — how the AI Specialist receives messages from requesters.
-   * **Outbound channels:** Activity Stream — how the AI Specialist sends responses or notifications.
+   * **Inbound channels:** Comments — how the AI Specialist receives messages from requesters.
+   * **Outbound channels:** Comments — how the AI Specialist sends responses or notifications.
+   * **Internal communication when confidence is low:** toggle — when on, the AI Specialist logs its proposed solution as a work note instead of responding directly to the requester when it isn't confident enough.
    * **Response templates:** Follow up, Propose a solution, and Reassign to human — these define how the AI Specialist phrases each type of update.
-3.  Leave **Disable posting to work notes** unchecked so the AI Specialist keeps posting its activity to the record's work notes.
 
 ***
 
-### ❇️ Configure Tasks — Escalate and reroute
+### ❇️ Configure Tasks — Reassign
 
-1. Select **Escalate and reroute** from the task list.
+> **Note:** on current platform versions this task is labeled **Reassign** — it's the same configuration area older guide versions called "Escalate and reroute," just renamed.
+
+1. Select **Reassign** from the task list.
 2. In the Settings panel, review:
-   * **Maximum number of interactions before escalation:** `2` (default) — how many times the AI Specialist will contact the requester before sending the ticket to a human agent.
-   * **Escalate on follow-up question:** Off by default — when on, any follow-up question from the requester sends the ticket straight to an agent instead of letting the AI Specialist handle it.
-   * **Fallback assignment:** Choose whether unresolved tickets re-assign to an assignment group or a specific person.
+   * **Maximum number of interactions before reassignment:** `2` (default) — how many times the AI Specialist will contact the requester before sending the ticket to a human agent.
+   * **Reassign on follow-up question:** Off by default — when on, any follow-up question from the requester sends the ticket straight to an agent instead of letting the AI Specialist handle it.
+   * **Choose where to reassign records:** Reassign to **An assignment group** or **A specific person**, then pick the group/person.
 
 ***
 
@@ -128,7 +132,7 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 Now let's see the AI Specialist in action on a real incident record.
 
 1. Select **Test** in the left-hand navigation.
-2. In the **Choose a record** field, search for an incident by its short description — for example, one titled **"VPN client failing to connect after overnight Windows patch deployment"** (`INC0010001` on this instance, though the exact number may differ on yours).
+2. In the **Choose a record** field, search for an open incident by its short description — for example, one of the Zscaler-themed incidents seeded on this lab instance (e.g. **"Zscaler ZPA tunnel disconnected — Finance team unable to reach internal apps"**). Match on the description text, not the `INC00XXXXX` number — your instance's numbering may differ.
 3. Select **Run**.
 4.  Watch the AI Specialist process the incident in real time — it will classify, triage, investigate, and propose a resolution.
 
@@ -170,12 +174,15 @@ Now let's see the AI Specialist in action on a real incident record.
 
 Select **Management** in the left-hand navigation. This is where you set access permissions, add copies of this AI Specialist, and activate it.
 
-1. Under **Manage locations and approved users**, review **Where it's managed** (Service Operations Workspace) and set **User access role(s)** — this is where you grant the roles (e.g., `itil`) that determine who can see this AI Specialist's actions in Core UI.
+1. Under **Manage locations and approved users**, review **Where it's managed** (Service Operations Workspace) and set **User access role(s)** — this is where you grant the roles (default is `sn_sow_itsm_common.sn_service_desk_manager`) that determine who can see this AI Specialist's actions in Core UI.
 
 2. The **Copies** section lets you clone this AI Specialist for other teams — not needed for this lab.
 3. Under **Activate**, confirm **Activate this AI specialist** is toggled **Yes**, then set the **AI specialist manager** field to **Ravi Kapoor**.
+4. Under **Publish**, confirm **Publish this AI specialist in a workspace** is toggled **Yes** — this makes the specialist available to the assigned managers/roles. It's usually already on for this lab.
 
-4.  Select **Save** in the top-right corner.
+5.  Select **Save** in the top-right corner.
+
+> ⚠️ **If incidents you assign to the AI Specialist in later exercises never get picked up — no activity, no work notes, nothing happens at all — this Activate toggle saving cleanly is not sufficient proof that dispatch is actually wired up.** On every fresh lab instance seen so far, the record that actually watches for incident assignment (`sn_aia_trigger_configuration`) needs a second activation pass from a **privileged account** (in CloudLabs, this is the `aislab.admin` login provided by your instructor) before it generates a real trigger — this Activate toggle can save successfully as a normal admin without that underlying trigger ever being created. If you hit total silence in Exercise 2, ask your instructor to complete this step from the privileged account rather than re-configuring anything above — nothing you did wrong, it's a known platform behavior on fresh installs.
 
 You've configured the profile, tasks, and settings. This specialist is now LIVE!
 
