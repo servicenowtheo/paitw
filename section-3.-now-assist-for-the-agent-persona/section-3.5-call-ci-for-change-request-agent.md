@@ -20,4 +20,8 @@ You could select any of the Cis (or multiple) to associate with the change
 
 **Congratulations!** You have summarized and identified Cis impacted by  a change request and completed Now Assist for the Agent persona.
 
+{% hint style="info" %}
+**End your Ravi Kapoor impersonation** before moving on — select your user icon (showing "RK") in the top-right corner, then select **End impersonation**. You'll be back to your own admin session for the next section.
+{% endhint %}
+
 &#x20;

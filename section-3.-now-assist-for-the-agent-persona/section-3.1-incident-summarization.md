@@ -1,5 +1,23 @@
 # Section 3.1 Incident Summarization
 
+{% hint style="info" %}
+**Persona for this section:** Sections 3.1-3.5 are written from the perspective of an IT agent, not an administrator. Before starting, impersonate **Ravi Kapoor** (one of the IT agent personas seeded on this lab instance) so that what you see matches an agent's real day-to-day access — not the unrestricted admin view.
+
+1. Select your user icon in the top-right corner, then select **Impersonate user**.
+
+<figure><img src="../.gitbook/assets/3.0-impersonate-menu.png" alt=""><figcaption></figcaption></figure>
+
+2. Search for and select **Ravi Kapoor**, then select **Impersonate user** to confirm.
+
+<figure><img src="../.gitbook/assets/3.0-impersonate-search-ravi.png" alt=""><figcaption></figcaption></figure>
+
+You'll know it worked when your user icon in the top-right shows "RK" and a banner confirms you're impersonating Ravi Kapoor.
+
+<figure><img src="../.gitbook/assets/3.0-impersonating-ravi.png" alt=""><figcaption></figcaption></figure>
+
+Stay impersonated as Ravi Kapoor through the end of Section 3 (Section 3.5) — you'll switch personas again for Section 5.
+{% endhint %}
+
 1. Please return to your lab instance by clicking on the ServiceNow logo in the upper-left corner. Alternatively, y**ou can remove any portal suffix from your instance URL**; for example, my URL looks like this.
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
@@ -13,6 +31,8 @@
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 4. In that list view, select the **“+ Explore”** button (tooltip “Explore with AI”) near the top-right of the list toolbar — this is the Gen-AI feature; the plain “Filter” button next to it is just the traditional filter-condition builder and has no AI input.
+
+<figure><img src="../.gitbook/assets/3.1-ravi-explore-button.png" alt=""><figcaption><p>Confirmed live as Ravi Kapoor — the "Explore with AI" button.</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/3.1-explore-panel.png" alt=""><figcaption></figcaption></figure>
 
