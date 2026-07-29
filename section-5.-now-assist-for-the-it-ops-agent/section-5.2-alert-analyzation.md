@@ -8,10 +8,6 @@ In this part of the lab, you will use Now Assist for ITOM as an operator to gain
 
 &#x20;
 
-{% hint style="info" %}
-Note: earlier versions of this lab referenced **Alert0010002** for this step. That specific alert consistently returns "No Insights — Insights can't be generated due to system or admin restrictions" when analyzed, regardless of who's logged in — live-confirmed across multiple sessions and personas. **Alert0010007** is a working substitute with the same kind of grouped-alert content, live-confirmed to analyze successfully.
-{% endhint %}
-
 1. Find the alert with the number **Alert0010007**.  **Click anywhere in the alert's Description**.  It opens the details panel.
 
 <figure><img src="../.gitbook/assets/alert1.png" alt=""><figcaption></figcaption></figure>
