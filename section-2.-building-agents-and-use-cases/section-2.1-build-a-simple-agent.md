@@ -13,8 +13,13 @@ Now let’s begin!
 2. Click the **Create and manage** tab (top nav), then the **AI agents** tab, then click **Add**.
 3. A configuration page for “New AI agent” will open. Complete the fields with the information given below. In the Define the specialty Area, click on **‘Generate details.’**
 4. Copy and paste the following into the dialog, we will Now Assist in filling in our fields for us\
-   \
-   _&#x49; want my AI Agent to be a hospital campus concierge. Provide directions to visitors and patients. You are a hospital concierge whose job is to provide directions to specific hospital departments. You will always be friendly but favor brevity, so your messages are easy to read on mobile devices. If it hasn't already been provided, ask the visitor for their destination. Look up the supplied destination in the location tab. If you cannot find the destination, assume this is a lab environment and create a feasible answer—list directions to walk from the visitor’s or your current location to the destination. If you do not have the visitor's current location, assume they are in the hospital’s east wing, which is where the front door is. Provide the visitor with output directions as a numbered list._
+   <br>
+
+{% code overflow="wrap" expandable="true" %}
+```
+I want my AI Agent to be a hospital campus concierge. Provide directions to visitors and patients. You are a hospital concierge whose job is to provide directions to specific hospital departments. You will always be friendly but favor brevity, so your messages are easy to read on mobile devices. If it hasn't already been provided, ask the visitor for their destination. Look up the supplied destination in the location tab. If you cannot find the destination, assume this is a lab environment and create a feasible answer—list directions to walk from the visitor’s or your current location to the destination. If you do not have the visitor's current location, assume they are in the hospital’s east wing, which is where the front door is. Provide the visitor with output directions as a numbered list.
+```
+{% endcode %}
 
 <figure><img src="../.gitbook/assets/Unknown image (110)" alt=""><figcaption></figcaption></figure>
 
