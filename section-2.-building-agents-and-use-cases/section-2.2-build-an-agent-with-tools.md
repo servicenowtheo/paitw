@@ -21,7 +21,7 @@ I want an agent that can recommend solutions for all incidents. This agent ident
 
 **\*\*\*If you don't see the tools below when you click Recommend Tools, add each tool manually using the Add tool button and choose the exact ones listed below from the existing. The instructor can help guide you\*\*\*\***
 
-<figure><img src="../.gitbook/assets/Unknown image (115)" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2026-08-10 09.34.49.png" alt=""><figcaption></figcaption></figure>
 
 We are missing one tool, so let’s create the following tools by selecting the **Add tool** option from the AI agent definition:
 
@@ -73,6 +73,6 @@ Under advance
 
 We have left many of the tools to be ‘Human in the loop supervised’ to showcase the agentic thought process.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2026-08-10 09.53.43.png" alt=""><figcaption></figcaption></figure>
 
 Next, let’s move this Agent and its tools to an Agentic workflow!

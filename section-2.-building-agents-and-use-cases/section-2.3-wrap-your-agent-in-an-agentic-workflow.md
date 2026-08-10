@@ -4,10 +4,14 @@
 2. Under the **Agentic workflows** tab, click **New**
 3. Click on the “**Generate details**” in the **Define key requirements** page, copy and paste this into the dialog
 
-> This workflow will be the “Incident Solution Agent workflow” . This use case provides recommendations to resolve incidents”. Provide a recommendation on how to resolve a given incident using an easy-to-follow numbered step-by-step list format
+{% code overflow="wrap" expandable="true" %}
+```
+This workflow will be the “Incident Solution Agent workflow” . This use case provides recommendations to resolve incidents”. Provide a recommendation on how to resolve a given incident using an easy-to-follow numbered step-by-step list format
+```
+{% endcode %}
 
 4. Click on “**Generate**.” Scroll down and see how it's filled in the fields for you!
-5. Click **Recommend**  button, then find the AI Agent you created previously
+5. Click **Recommend** button, then find the AI Agent you created previously
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +39,7 @@
 
 Now let’s test your new workflow!
 
-Let’s continue to use the same incident record as we’ve used previously – INC0010248. In the Task box enter&#x20;
+Let’s continue to use the same incident record as we’ve used previously – INC0010248. In the Task box enter
 
 > Help me resolve INC0010248
 
