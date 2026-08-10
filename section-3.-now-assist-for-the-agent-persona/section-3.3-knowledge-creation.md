@@ -15,16 +15,26 @@ description: >-
 Tip: In this lab, the Generate Knowledge skill is only available when the incident is in a “Resolved” or “Closed” state. Availability filters can be updated to fit your processes.
 {% endhint %}
 
-2. A related record will be created, and the Create New Article template will appear. Select “IT” under Select Knowledge Base, choose ‘Standard' under Select Article Template, then click “**Next**.”
+2. A related record will be created, and the Create New Article template will appear. Select “Knowledge” under Select Knowledge Base, choose ‘Standard' under Select Article Template, then click “**Next**.”
 
-<figure><img src="../.gitbook/assets/kb.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2026-08-10 10.43.21.png" alt=""><figcaption></figcaption></figure>
 
-3. Then an AI draft article pop-up appears; click “Y**es, draft with Now Assist.**"
+3.  There is a bug currently in Now Assist for KB,&#x20;
 
-<figure><img src="../.gitbook/assets/useAI.png" alt=""><figcaption></figcaption></figure>
+    1. **Steps to Resolve**
 
-4. Review the article body.  How closely does it match the details in the Incident?
+    Step 1: On the resolved incident, click 'Create Knowledge'. The new 'Create New Knowledge' page will open. Pick **Knowledge** and **Standard** under KB, and&#x20;
+
+<figure><img src="../.gitbook/assets/2026-08-10 13.19.18 (1).png" alt=""><figcaption></figcaption></figure>
+
+A knowledge screen will appear. \
+Step 2: On the right side of the editor, click the **trash/bin icon (tooltip: 'Clear canvas'**). This clears the canvas so the AI can write fresh content.\
+Step 3: At the bottom of the canvas, you will see a prompt that says '**Write about \<incident number>**'. Make sure 'Source' is set to 'Incidents' and 'Language' is set to 'English'.\
+Step 4: Click the arrow (send) icon at the right of that prompt. Now Assist will generate the knowledge article for you using the incident details.\
+Step 5: Review the draft, edit if needed, and Save / Publish.
+
+4. Review the article body. How closely does it match the details in the Incident?
 
 <figure><img src="../.gitbook/assets/finbk.png" alt=""><figcaption></figcaption></figure>
 
-**Congratulations,** you have created a knowledge article!  Please **don’t close** your browser or the workspace; we’ll continue exploring it in the next section.<br>
+**Congratulations,** you have created a knowledge article! Please **don’t close** your browser or the workspace; we’ll continue exploring it in the next section.<br>

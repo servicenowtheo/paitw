@@ -8,20 +8,16 @@
 
 <figure><img src="../.gitbook/assets/nap1.png" alt="" width="158"><figcaption></figcaption></figure>
 
-3. Click on the Suggest "**Configuration Items for a change request**” card.
+3. Click on the " Suggest Configuration Items for a Change Request” card. Then answer **"yes"** when prompted in Now Assist Pane, and then click on "**Recommend based on analysis"**
 
-<figure><img src="../.gitbook/assets/results1.png" alt="" width="364"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2026-08-10 13.56.46.png" alt=""><figcaption></figcaption></figure>
 
-4. This agent searches the CMDB for CIs that may be impacted by this change.
+4. This agent searches the CMDB for CIs that may be impacted by this change. Our point in this exercise is to play the role of approver when determining the potential blast radius of the change. An important element for approval and made easier with Now Assist OTB Agentic workflows!
 
 You could select any of the Cis (or multiple) to associate with the change
 
-&#x20;
-
-**Congratulations!** You have summarized and identified Cis impacted by  a change request and completed Now Assist for the Agent persona.
+**Congratulations!** You have summarized and identified Cis impacted by a change request and completed Now Assist for the Agent persona.
 
 {% hint style="info" %}
 **End your Ravi Kapoor impersonation** before moving on — select your user icon (showing "RK") in the top-right corner, then select **End impersonation**. You'll be back to your own admin session for the next section.
 {% endhint %}
-
-&#x20;

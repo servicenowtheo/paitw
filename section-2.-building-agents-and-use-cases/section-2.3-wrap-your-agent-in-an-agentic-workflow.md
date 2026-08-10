@@ -46,4 +46,8 @@ Help me resolve INC0010248
 ```
 {% endcode %}
 
+You may be prompted by the AI Agent for more informatio&#x6E;**.** Enter **'Load Balancer'** if that happens
+
 **Click Continue to Test Chat response**
+
+<figure><img src="../.gitbook/assets/2026-08-10 10.05.16.png" alt=""><figcaption></figcaption></figure>
