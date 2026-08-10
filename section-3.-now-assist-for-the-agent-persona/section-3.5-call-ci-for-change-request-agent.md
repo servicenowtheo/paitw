@@ -8,7 +8,7 @@
 
 <figure><img src="../.gitbook/assets/nap1.png" alt="" width="158"><figcaption></figcaption></figure>
 
-3. Click on the " Suggest Configuration Items for a Change Request” card. Then answer **"yes"** when prompted in Now Assist Pane, and then click on "**Recommend based on analysis"**
+3. Click on the " Suggest Configuration Items for a Change Request” card. Then answer **"yes"** when prompted in Now Assist Pane, and then click on "**Recommend based on analysis"-because we are in a lab, some responses MAY vary.**
 
 <figure><img src="../.gitbook/assets/2026-08-10 13.56.46.png" alt=""><figcaption></figcaption></figure>
 
