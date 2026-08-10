@@ -1,4 +1,4 @@
-# Section 6.1 Playbook Generation
+# Section 5.1 Playbook Generation
 
 Everyone in the room has probably drawn a brilliant flow on a whiteboard and then had to figure out how to get this into ServiceNow.
 
@@ -10,44 +10,49 @@ Everyone in the room has probably drawn a brilliant flow on a whiteboard and the
 
 <figure><img src="../.gitbook/assets/2026-02-25 10.45.07.png" alt=""><figcaption></figcaption></figure>
 
-3. Copy and paste the following TEXT into the description
+3. First, let's try with TEXT ONLY . Copy and paste the following TEXT into the description below after choosing instructions ONLY and Execution type of 'Standalone'.
+4. &#x20;Click 'Generate Playbook preview" in the bottom right
 
-> > _Step 1 — Pre-Intake (GCR-Creative)_\
-> > &#xNAN;_• Review the upcoming GCR roadmap to identify expected creative needs._
-> >
-> > _• Create placeholder projects for resource and skill forecasting._
-> >
-> > _Step 2 - Project Intake (Requestors)_
-> >
-> > _• Creative requests submitted via the Parent GCR intake system (Jira)._
-> >
-> > _• Each Jira ticket generates a linked Jira Child ticket for GCR Creative's workflow._
-> >
-> > _Step 3 - Resource Review (Creative Leads)_
-> >
-> > _• Weekly review of capacity and assign resources by skill, role, and availability._
-> >
-> > _Step 4 — Project Kick-Off (Creative Leads & Team Members)_
-> >
-> > _• Finalize the creative brief, set milestones, confirm deliverables, and assign ownership.4._
-> >
-> > _Step 5 - Concept & Create (Creative Team Members)_
-> >
-> > _• Execute tasks in alignment with the agreed timelines and quality standards._
-> >
-> > _Step 6 - Review & Delivery (Creative Leads)_
-> >
-> > _• Review, approve, and deliver assets._
-> >
-> > _Step 7 - Reporting & Finance Tracking (Creative Leads, Managers & Finance/Operations)_
-> >
-> > _• Capture time spent, cost, and resource utilization data._
-> >
-> > _• Link spend to specific initiatives, reconcile with finance systems, and update stakeholders_
->
-> _._
+<figure><img src="../.gitbook/assets/2026-08-10 14.21.59.png" alt=""><figcaption></figcaption></figure>
 
-4. First, download this image:
+<figure><img src="../.gitbook/assets/2026-08-10 14.23.10.png" alt=""><figcaption></figcaption></figure>
+
+{% code overflow="wrap" expandable="true" %}
+```
+
+Step 1 — Pre-Intake (GCR-Creative)
+&#xNAN;• Review the upcoming GCR roadmap to identify expected creative needs.
+• Create placeholder projects for resource and skill forecasting.
+Step 2 - Project Intake (Requestors)
+• Creative requests submitted via the Parent GCR intake system (Jira).
+• Each Jira ticket generates a linked Jira Child ticket for GCR Creative's workflow.
+Step 3 - Resource Review (Creative Leads)
+• Weekly review of capacity and assign resources by skill, role, and availability.
+Step 4 — Project Kick-Off (Creative Leads & Team Members)
+• Finalize the creative brief, set milestones, confirm deliverables, and assign ownership.4.
+Step 5 - Concept & Create (Creative Team Members)
+• Execute tasks in alignment with the agreed timelines and quality standards.
+Step 6 - Review & Delivery (Creative Leads)
+• Review, approve, and deliver assets.
+Step 7 - Reporting & Finance Tracking (Creative Leads, Managers & Finance/Operations)
+• Capture time spent, cost, and resource utilization data.
+• Link spend to specific initiatives, reconcile with finance systems, and update stakeholders
+```
+{% endcode %}
+
+4. In about 15-30 seconds, you should see this
+
+<figure><img src="../.gitbook/assets/2026-08-10 14.24.44.png" alt=""><figcaption></figcaption></figure>
+
+4. Now let's try an image, or click the plus and choose "flow.
+
+<figure><img src="../.gitbook/assets/2026-08-10 14.26.46.png" alt=""><figcaption></figcaption></figure>
+
+4. Repeat the steps, and choose 'image' to describe the playbook
+
+,&#x20;
+
+4. Download this image from below and attach it, then hit **'Generate Flow preview'** again
 
 <figure><img src="../.gitbook/assets/imagefordownload.jpg" alt=""><figcaption></figcaption></figure>
 
