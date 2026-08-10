@@ -4,9 +4,11 @@
 2. Click the **Create and Manage** module.
 3. Click on the **AI Agent** tab, then click **Add**
 
-> I want an agent that can recommend solutions for all incidents. This agent identifies and recommends a resolution for an open and active incident being worked on by the Service Desk
->
-> helping end users resolve their IT issues. It provide simple to follow steps to help users remediate their problem using a professional and business friendly tone. first it will need to get the dteails, any current similar incidents open, using the description search the KB for relevant articles to help. If there are no relevant articles, use your IT knowledge to come up with a recommended resolution based on the short description of the incident. Add resolution steps, along with any relevant similar incidents and knowledge articles, to the Additional Comments section of the incident record. When adding a comment, make sure to include a qualifier that states the comment was added by an AI Agent. Your output message to the user should be formatted to be easy to read with new line characters in a list format. Also provide your reasoning for recommending these steps.
+{% code overflow="wrap" expandable="true" %}
+```
+I want an agent that can recommend solutions for all incidents. This agent identifies and recommends a resolution for an open, active incident being worked on by the Service Desk to help end users resolve their IT issues. It provides simple, step-by-step guidance to help users remediate their problem, using a professional and business-friendly tone. First, it needs to gather the details and any currently open, similar incidents. Using the description, search the KB for relevant articles to help. If there are no relevant articles, use your IT knowledge to come up with a recommended resolution based on the short description of the incident. Add resolution steps, along with any relevant similar incidents and knowledge articles, to the Additional Comments section of the incident record. When adding a comment, make sure to include a qualifier that states the comment was added by an AI Agent. Your output message to the user should be formatted to be easy to read, with new line characters in a list format. Also provide your reasoning for recommending these steps.
+```
+{% endcode %}
 
 <figure><img src="../.gitbook/assets/Unknown image (113)" alt=""><figcaption></figcaption></figure>
 
