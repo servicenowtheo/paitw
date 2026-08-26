@@ -1,12 +1,12 @@
-# Exercise 1: L1 Service Desk AI Specialist Setup & Configuration
+# Exercise 1: L1 Service Desk AI Specialist Setup & Configurationf
 
 > **Objective:** Configure and activate the L1 Service Desk AI Specialist so it can autonomously classify, triage, investigate, and resolve incidents on behalf of your IT Support team.
 >
-> ⏱️ **Total time:** ~15 minutes
+> ⏱️ **Total time:** \~15 minutes
 
 ***
 
-### ❇️ Navigate to AI Agent Studio
+### Navigate to AI Agent Studio
 
 1.  In the filter navigator, type **AI Agent Studio** and select **AI Agent Studio > Overview**.
 
@@ -14,14 +14,14 @@
 
 ***
 
-### ❇️ Open the L1 Service Desk AI Specialist for editing
+### Open the L1 Service Desk AI Specialist for editing
 
 1. On the AI Agent Studio Overview page, locate the **L1 Service Desk AI Specialist** card under _Ready-made AI automations > AI specialists_.
-2. Select **View Details** on the card — this opens the full configuration experience directly. (Note: you may also see an **Unpublish** action on the card, which is not needed for this exercise.)
+2. Select **View Details** on the card — this opens the full configuration experience directly. (
 
 ***
 
-### ❇️ Personalize the AI Specialist Profile
+### Personalize the AI Specialist Profile
 
 You are now on the **Profile** page for the L1 Service Desk AI Specialist. This is where you configure the AI Specialist's identity, capabilities, group membership, and roles.
 
@@ -33,14 +33,14 @@ You are now on the **Profile** page for the L1 Service Desk AI Specialist. This 
 4.  Confirm **IT Support** is listed. On a lab instance provisioned from the current ICE package, it's usually already there by default — a role-fix step run during provisioning adds it for you. If it's missing, type `IT S` and select **IT Support** from the dropdown to add it yourself.
 
     > Assignment groups determine which team's tickets the AI Specialist will pick up. Adding IT Support means the AI Specialist will begin handling incidents assigned to that group.
-5. Review the **Roles** section. The AI Specialist should already have the following roles assigned:
-   * `sn_service_desk_agent`
-   * `itil`
-6.  Select **Save** in the top-right corner.
+5.  Review the **Roles** section. The AI Specialist should already have the following roles assigned:
+
+    <figure><img src="../../.gitbook/assets/2026-08-26 11.01.58 (1).png" alt=""><figcaption></figcaption></figure>
+6. Select **Save** in the top-right corner.
 
 ***
 
-### ❇️ Configure Tasks — Classify and assign
+### Configure Tasks — Classify and assign (for this lab we will leave them as-is)
 
 The **Tasks** section is where you configure how the AI Specialist makes decisions, takes action, and interacts within workflows. Select **Tasks** in the left-hand navigation.
 
@@ -54,7 +54,7 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 
 ***
 
-### ❇️ Configure Tasks — Triage and diagnose
+### &#x20;Configure Tasks — Triage and diagnose
 
 1. Select **Triage and diagnose** from the task list.
 2. In the Settings panel, review the following:
@@ -63,26 +63,26 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 3.  Scroll down to **Map AI Specialist states to record states**. Confirm the following mappings:
 
     | AI Specialist State | → | Incident State |
-    | -------------------- | - | --------------- |
-    | New               | → | New            |
-    | Work in progress  | → | In Progress    |
-    | Awaiting info     | → | On Hold        |
-    | Solution proposed | → | Resolved       |
+    | ------------------- | - | -------------- |
+    | New                 | → | New            |
+    | Work in progress    | → | In Progress    |
+    | Awaiting info       | → | On Hold        |
+    | Solution proposed   | → | Resolved       |
 
     > **Note:** These state mappings may differ in your production instances if you've modified the out-of-the-box incident state model. Adjust the mappings to match your organization's workflow.
 
 ***
 
-### ❇️ Configure Tasks — Investigate and resolve
+### Configure Tasks — Investigate and resolve
 
 1. Select **Investigate and resolve** from the task list.
 2. In the Settings panel, review and configure:
    * **Knowledge sources:** Confirm the following AI Search Profiles are listed:
      * `ZTSD Search Profile`
      * `Known Error Matcher`
-   * Select **+ Add** to attach additional search profiles if needed.
+   *   Select **+ Add** to attach additional search profiles if needed.
 
-     > **Note:** If `Known Error Matcher` isn't listed, select **+ Add** and add it manually before continuing.
+       > **Note:** If `Known Error Matcher` isn't listed, select **+ Add** and add it manually before continuing.
 3.  Set the **Research depth** based on your preference:
 
     * **Low** – faster results, less detail
@@ -92,17 +92,17 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
     > Knowledge sources define where the AI Specialist looks for resolution information. Search profiles can include knowledge bases, known error databases, and other indexed content. The research depth controls how extensively the AI Specialist investigates before proposing a solution.
 
     > **Note:** Product Management has indicated the Research Depth setting is currently not applied by the AI Specialist and is expected to be removed in a future release. You can leave it at the default for now.
-4.  Leave **Pre resolution condition** blank for this lab — this optional encoded query lets you validate the record against the table before the AI Specialist acts on it.
-5.  Set the **Execution mode**:
-    * **Supervised** – The AI Specialist presents resolution notes as a draft for a human agent to review before posting to the caller.
-    * **Autonomous** – The AI Specialist posts resolution notes directly to the caller without human review.
+4. Leave **the pre-resolution condition** blank for this lab — this optional encoded query lets you validate the record against the table before the AI Specialist acts on it.
+5. Set the **Execution mode**:
+   * **Supervised** – The AI Specialist presents resolution notes as a draft for a human agent to review before posting to the caller.
+   * **Autonomous** – The AI Specialist posts resolution notes directly to the caller without human review.
 6.  For this lab, select **Autonomous**.
 
     > In a production rollout, many organizations start with **Supervised** mode to build confidence in the AI Specialist's responses, then graduate to **Autonomous** as accuracy improves. For today's lab, we'll go straight to Autonomous so you can see the full end-to-end flow.
 
 ***
 
-### ❇️ Configure Tasks — Response formatting
+### Configure Tasks — Response formatting
 
 > **Note:** on current platform versions this task is labeled **Response formatting** — it's the same configuration area older guide versions called "Communicate updates," just renamed.
 
@@ -115,7 +115,7 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 
 ***
 
-### ❇️ Configure Tasks — Reassign
+### Configure Tasks — Reassign
 
 > **Note:** on current platform versions this task is labeled **Reassign** — it's the same configuration area older guide versions called "Escalate and reroute," just renamed.
 
@@ -127,7 +127,7 @@ The **Tasks** section is where you configure how the AI Specialist makes decisio
 
 ***
 
-### ❇️ Test the AI Specialist
+### est the AI Specialist
 
 Now let's see the AI Specialist in action on a real incident record.
 
@@ -141,9 +141,11 @@ Now let's see the AI Specialist in action on a real incident record.
 
     > **Be patient:** the test takes about 5-7 minutes to complete. While it's running, **All Steps** keeps updating live, showing the AI Specialist's thought process — this is your window into how it's actually reasoning through the incident.
 
+    <figure><img src="../../.gitbook/assets/2026-08-26 11.04.48.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
-### ❇️ Review the Performance Dashboard
+### Review the Performance Dashboard
 
 1. Select **Performance** in the left-hand navigation.
 2. Explore the three dashboard tabs:
@@ -156,31 +158,29 @@ Now let's see the AI Specialist in action on a real incident record.
 
 ***
 
-### ❇️ Review the Activity Log
+### Review the Activity Log
 
 1. Select **Activity** in the left-hand navigation.
 2. Review the **AI Specialist activity** list showing:
    * **Associated record** — The incident the AI Specialist worked (match by short description, not just number — your instance may have a different `INC00XXXXX` value)
    * **State** — Current state of the AI Specialist's task (e.g., Completed)
    * **State Reason** — Why the task is in that state
-   * **Assigned to** — The AI Specialist that handled it
+   * **Assigned to** — The AI Specialist who handled it
    * **Created** — Timestamp of when the activity was created
    * **Feedback** — Thumbs up/down icons for providing feedback on the AI Specialist's performance
-3.  Toggle **Turn on live updates** to watch new activity appear in real time as the AI Specialist processes incidents.
+3. Toggle **Turn on live updates** to watch new activity appear in real time as the AI Specialist processes incidents.
 
 ***
 
-### ❇️ Configure management of the L1 Service Desk AI Specialist
+### Configure management of the L1 Service Desk AI Specialist
 
 Select **Management** in the left-hand navigation. This is where you set access permissions, add copies of this AI Specialist, and activate it.
 
 1. Under **Manage locations and approved users**, review **Where it's managed** (Service Operations Workspace) and set **User access role(s)** — this is where you grant the roles (default is `sn_sow_itsm_common.sn_service_desk_manager`) that determine who can see this AI Specialist's actions in Core UI.
-
 2. The **Copies** section lets you clone this AI Specialist for other teams — not needed for this lab.
 3. Under **Activate**, confirm **Activate this AI specialist** is toggled **Yes**, then set the **AI specialist manager** field to **Ravi Kapoor**.
 4. Under **Publish**, confirm **Publish this AI specialist in a workspace** is toggled **Yes** — this makes the specialist available to the assigned managers/roles. It's usually already on for this lab.
-
-5.  Select **Save** in the top-right corner.
+5. Select **Save** in the top-right corner.
 
 > ⚠️ **If incidents you assign to the AI Specialist in later exercises never get picked up — no activity, no work notes, nothing happens at all — this Activate toggle saving cleanly is not sufficient proof that dispatch is actually wired up.** On every fresh lab instance seen so far, the record that actually watches for incident assignment (`sn_aia_trigger_configuration`) needs a second activation pass from a **privileged account** (in CloudLabs, this is the `aislab.admin` login provided by your instructor) before it generates a real trigger — this Activate toggle can save successfully as a normal admin without that underlying trigger ever being created. If you hit total silence in Exercise 2, ask your instructor to complete this step from the privileged account rather than re-configuring anything above — nothing you did wrong, it's a known platform behavior on fresh installs.
 
@@ -188,7 +188,7 @@ You've configured the profile, tasks, and settings. This specialist is now LIVE!
 
 ***
 
-#### ✅ Checkpoint
+#### Checkpoint
 
 You have successfully:
 
@@ -205,4 +205,4 @@ You have successfully:
 * Reviewed the Performance dashboard and Activity log
 * Activated the AI Specialist
 
-🎉 **Congratulations!** Your L1 Service Desk AI Specialist is now live and ready to autonomously resolve incidents. Next up — let's put it to work on a real queue of incidents.
+🎉 **Congratulations!** Your L1 Service Desk AI Specialist is now live and ready to autonomously resolve incidents. Next up — let's put it to work on a real incident queue.

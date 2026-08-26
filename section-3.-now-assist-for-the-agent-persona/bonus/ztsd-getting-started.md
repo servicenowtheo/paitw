@@ -6,14 +6,6 @@ description: Prevent and Resolve Incidents With Autonomous Workers and Chat AI
 
 ### Introduction and Objectives
 
-{% updates format="full" %}
-{% update date="2026-08-10" %}
-## THIS IS PRE GENERAL AVAILABILITY(GA) OF THE L1 SPECIALIST. RESULTS MAY BE DIFFERENT AT THE TIME OF GA.&#x20;
-
-PLEASE DISCUSS SAFE HARBOR NOTICE WITH LAB LEADER AND DO NOT MAKE ANY BUSINESS DECISIONS BASED SOLELY ON THIS PORTION OF THE LAB/WORKSHOP.&#x20;
-{% endupdate %}
-{% endupdates %}
-
 IT support teams face mounting pressure as ticket volumes grow, employee expectations rise, and skilled agents become harder to retain. Too often, routine incidents — password resets, application crashes, device issues, access and equipment requests — consume the same time and attention as complex, high-impact problems. In this lab, you will experience firsthand how ServiceNow's Zero Touch Support capabilities transform the IT service desk with the L1 Service Desk AI Specialist resolving and triaging real incidents **entirely within ServiceNow** — no additional infrastructure required.
 
 This lab is built around a single, proven capability: the L1 Service Desk AI Specialist resolving and triaging real incidents entirely within ServiceNow — including correctly recognizing when to hand a ticket to a human rather than forcing a fit.
