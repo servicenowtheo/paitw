@@ -179,10 +179,10 @@ Select **Management** in the left-hand navigation. This is where you set access 
 1. Under **Manage locations and approved users**, review **Where it's managed** (Service Operations Workspace) and set **User access role(s)** — this is where you grant the roles (default is `sn_sow_itsm_common.sn_service_desk_manager`) that determine who can see this AI Specialist's actions in Core UI.
 2. The **Copies** section lets you clone this AI Specialist for other teams — not needed for this lab.
 3. Under **Activate**, confirm **Activate this AI specialist** is toggled **Yes**, then set the **AI specialist manager** field to **Ravi Kapoor**.
-4. Under **Publish**, confirm **Publish this AI specialist in a workspace** is toggled **Yes** — this makes the specialist available to the assigned managers/roles. It's usually already on for this lab.
+4. Under **Publish**, confirm **Publish this AI specialist in a workspace** is toggled **Yes** — this makes the specialist available to the assigned managers/roles. It's usually already on for this lab. Without this step we will not be able to continue the next section.
 5. Select **Save** in the top-right corner.
 
-> ⚠️ **If incidents you assign to the AI Specialist in later exercises never get picked up — no activity, no work notes, nothing happens at all — this Activate toggle saving cleanly is not sufficient proof that dispatch is actually wired up.** On every fresh lab instance seen so far, the record that actually watches for incident assignment (`sn_aia_trigger_configuration`) needs a second activation pass from a **privileged account** (in CloudLabs, this is the `aislab.admin` login provided by your instructor) before it generates a real trigger — this Activate toggle can save successfully as a normal admin without that underlying trigger ever being created. If you hit total silence in Exercise 2, ask your instructor to complete this step from the privileged account rather than re-configuring anything above — nothing you did wrong, it's a known platform behavior on fresh installs.
+>
 
 You've configured the profile, tasks, and settings. This specialist is now LIVE!
 
