@@ -35,7 +35,7 @@ You are now on the **Profile** page for the L1 Service Desk AI Specialist. This 
     > Assignment groups determine which team's tickets the AI Specialist will pick up. Adding IT Support means the AI Specialist will begin handling incidents assigned to that group.
 5.  Review the **Roles** section. The AI Specialist should already have the following roles assigned:
 
-    <figure><img src="../../.gitbook/assets/2026-08-26 11.01.58 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2026-09-01 08.51.51.png" alt=""><figcaption></figcaption></figure>
 6. Select **Save** in the top-right corner.
 
 ***
