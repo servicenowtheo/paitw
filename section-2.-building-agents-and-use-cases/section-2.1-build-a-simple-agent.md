@@ -44,6 +44,10 @@ Note: In a non-lab environment and with MCP, you could expose agents to third pa
 
 <figure><img src="../.gitbook/assets/2.1-greetings-tool-added.png" alt=""><figcaption><p>Greetings tool added</p></figcaption></figure>
 
+**If the proper Recommended tool does NOT show, Select Add tool>Script and chose existing tool**&#x20;
+
+![](<../.gitbook/assets/2026-09-01 09.41.37.png>)![](<../.gitbook/assets/2026-09-01 09.43.24.png>)
+
 8. In Define security controls, click “**Save and continue**” on the following two steps
    1. Define user access -> select '**Any Authenticated user**’ from the User access drop-down, press "Save and continue".
    2. Define data access -> Select the **Dynamic user**, search for and select **‘itil’** and '**admin**' from the approved roles, press "Save and continue".

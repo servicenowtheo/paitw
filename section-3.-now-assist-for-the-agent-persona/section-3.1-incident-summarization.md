@@ -15,7 +15,9 @@ You'll know it worked when your user icon in the top-right shows "RK" and a bann
 
 <img src="../.gitbook/assets/3.0-impersonating-ravi.png" alt="" data-size="original">
 
-Stay impersonated as Ravi Kapoor through the end of Section 3 (Section 3.5) — you'll switch personas again for Section 5.
+Stay impersonated as Ravi Kapoor through the end of Section 3 (Section 3.5) — you'll switch personas again for Section 5.\
+\
+**NOTE THAT THE NOW ASSIST EXPLORER MAY NOT WORK ON ALL LAB INSTANCES. IF YOU DO NOT SEE THE SPARKLE AS SHOWN IN THE SCREENSHOT BELOW, PLEASE SKIP. WE APOLOGIZE**
 {% endhint %}
 
 1. Once you impersonate **Ravi Kapoor** Service Operations Workspace is the homepage. Refresh the page once you land there after Impersonating, otherwise you probably won't see any data the page.&#x20;
